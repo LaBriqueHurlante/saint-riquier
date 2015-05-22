@@ -1,0 +1,67 @@
+<style>
+body {background: url(css/img/darkroom.jpg);background-size:cover;}
+#nav {
+	position:fixed;
+	top:15px;
+	left:15px;
+	bottom:15px;
+	right:15px;
+	background: rgba(255,255,255,0.5);
+	padding:30px;
+	text-align: center;
+  overflow: hidden;
+  }
+  .ouvre {
+	  transition:all ease-in .3s;
+	  transform:scale(1);
+	  
+	  }
+  .ferme {
+	  transition:all ease-in .3s;
+	  transform:scale(0);
+	  opacity:0;
+	  }
+  
+#boutonTest {
+position:fixed;
+right:30px;
+top:30px;
+padding:10px;
+z-index:100;
+  }
+ 
+#nav img {
+width:55%;
+height:auto;	
+	} 
+</style>
+
+
+<button id="boutonTest" onClick="fonctionTest()">Menu</button>
+<div id="nav" class="ferme">
+
+<h1>PLAN DE L'EXPO</h1>
+<img src="css/img/plan_musee.png" usemap="#map" />
+
+<map name="map">
+  <area shape="circle" coords="173,75,50" href="oeuvres/02-chiensbleus.html" alt="Accueil" />
+</map>
+
+
+</div>
+
+<script>
+function fonctionTest(){
+			var ouvreFerme = document.getElementById('nav') ;
+			if (ouvreFerme.className.match('ferme') ) {
+				
+				ouvreFerme.className = "ouvre" ;	
+			} else {
+				ouvreFerme.className = "ferme" ;
+
+			}
+		}
+		
+		
+</script>
+
