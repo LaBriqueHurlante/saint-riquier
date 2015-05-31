@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>Pan</title>
 <link href="../css/Style.css" rel="stylesheet" type="text/css">
+<link href="../css/popup.css" rel="stylesheet" type="text/css">
 
 <script src="../js/jquery-1.11.2.min.js"></script>
 <script src="../js/scroll.js"></script>
@@ -19,7 +20,7 @@
   #section1 {
 	  height:1672px;
 	  }
-  button {
+button {
   padding: 2rem;
   margin: 15px;
   position: absolute;
@@ -38,40 +39,12 @@ p {
   font-family: source;
   line-height: 1.6;
   }
- .popup-button {color:red;}
- 
- #fade { /*--Masque opaque noir de fond--*/
-	display: none; /*--masqué par défaut--*/
-	background: #000;
-	position: fixed; left: 0; top: 0;
-	width: 100%; height: 100%;
-	opacity: .80;
-	z-index: 9999;
-}
-.popup_block{
-	display: none; /*--masqué par défaut--*/
-	background: #fff;
-	padding: 20px;
-	border: 20px solid #ddd;
-	float: left;
-	font-size: 1.2em;
-	position: fixed;
-	top: 50%; left: 50%;
-	z-index: 99999;
-	/*--Les différentes définitions de Box Shadow en CSS3--*/
-	-webkit-box-shadow: 0px 0px 20px #000;
-	-moz-box-shadow: 0px 0px 20px #000;
-	box-shadow: 0px 0px 20px #000;
-	/*--Coins arrondis en CSS3--*/
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-}
-img.btn_close {
-	float: right;
-	margin: -55px -55px 0 0;
-}
- 
+ .popup-button {
+	 color:red;
+	 padding: 0;
+  		margin: 0;
+	  position: relative;
+  }
 
 </style>
 
@@ -79,6 +52,41 @@ img.btn_close {
 </head>
 
 <body>
+
+		<!-- LE CONTENU DE LA POPUP 1 -->
+		<div class="modal blur-effect" id="popup">
+			<div class="popup-content">
+				<h3>Satyre</h3>
+				<div>
+					<p class="para">Un satyre dans la mythologie grecque est un personnage mi-homme, mi-bouc.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+		<!-- LE CONTENU DE LA POPUP 2 -->
+		<div class="modal blur-effect" id="popup2">
+			<div class="popup-content">
+				<h3>Lyre</h3>
+				<div>
+					<p class="para">Une lyre est un instrument à cordes. Dans la mythologie grecque, le dieu Hermès invente la lyre et l'offre ensuite à Apollon.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP --> 
+		<!-- LE CONTENU DE LA POPUP 3 -->
+		<div class="modal blur-effect" id="popup3">
+			<div class="popup-content">
+				<h3>Subtile</h3>
+				<div>
+					<p class="para">Subtile veut dire délicat, fin, raffiné.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->       
+
 
 <button id="boutonMenu" onClick="fonctionTest()"><img src="../css/img/nav/icone-menu.png" /></button>
 <div id="nav" class="ferme"><h1>PLAN DE L'EXPO</h1><img src="../css/img/plan_musee.png" usemap="#map" /><map name="map"><area shape="circle" coords="173,75,50" href="oeuvres/02.html" alt="Accueil" /></map></div>
@@ -95,19 +103,16 @@ img.btn_close {
 
 	<div id="panGlobal">
     
-    <div id="popup_name" class="popup_block">
-	<h2>Developpez.com</h2>
-	<p>Soh Tanaka est traduit sur developpez.com.</p>
-</div>
+
     
     	<span id="pan1">
         	<img class="pan-img" src="../css/img/pan/PanA.jpg" />
         	<h2 id="panH2">Le concours de musique entre Pan et Apollon ou Comment Midas a changé d'oreilles</h2>
-            <p id="p1">Le dieu Pan, joyeux <a class="popup-button">satyre</a>, vagabonde dans les<br />
+            <p id="p1">Le dieu Pan, joyeux <button class="popup-button" data-modal="popup">satyre</button>, vagabonde dans les<br />
              montagnes et les bois, accompagné par le roi Midas.<br />
              Dans les forêts du mont Tmole, il s'amuse en jouant<br />
              de sa flûte légère.<br />           
-            Il préfère cet instrument simple à la <strong class="popup-button">lyre</strong> d'Apollon,<br />
+            Il préfère cet instrument simple à la <button class="popup-button" data-modal="popup2">lyre</button> d'Apollon,<br />
             dieu des arts et de la musique.</p>
                      
             <p id="p1bis">Pan propose à Apollon<br />
@@ -115,8 +120,8 @@ img.btn_close {
             à chacun de prouver ses talents.</p>    
                   
            <p id="p1ter">Apollon acceptera-t-il de se mesurer à Pan ?</p>
-        	<button id="pan2" class="panButton1">Non</button>
-            <button id="pan3" class="panButton2">Oui</button>
+        	<button id="pan2" class="bpan panButton1">Non</button>
+            <button id="pan3" class="bpan panButton2">Oui</button>
         </span>
         
         <span id="pan2">
@@ -125,7 +130,7 @@ img.btn_close {
             
             <p id="p2bis">Retourne au choix précédent !</p>
             
-        	<button id="pan1" class="panButton3"><img src="../css/img/pan/fleche.png" /></button>
+        	<button id="pan1" class="bpan panButton3"><img src="../css/img/pan/fleche.png" /></button>
         </span>
         
         <span id="pan3">
@@ -135,8 +140,8 @@ img.btn_close {
             
 			<p id="p3bis">Qui choisissent-ils, Midas ou le dieu du mont Tmole ?</p>
             
-        	<button id="pan4" class="panButton4">Le mont Tmole</button>
-            <button id="pan3bis" class="panButton5">Le roi Midas</button>
+        	<button id="pan4" class="bpan panButton4">Le mont Tmole</button>
+            <button id="pan3bis" class="bpan panButton5">Le roi Midas</button>
         </span>
         
         <span id="pan3bis">
@@ -147,7 +152,7 @@ img.btn_close {
             
             <p id="p3ter">Retourne au choix précédent !</p>
             
-        	<button id="pan3" class="panButton6"><img src="../css/img/pan/fleche.png" /></button>
+        	<button id="pan3" class="bpan panButton6"><img src="../css/img/pan/fleche.png" /></button>
         </span>
                 
         <span id="pan4">
@@ -159,13 +164,13 @@ img.btn_close {
             qui joue un air sur sa lyre.</p>
             
             <p id="p6">Le dieu du mont Tmole désigne Apollon meilleur musicien ;<br />
-            la lyre est selon lui plus <strong class="popup-button">subtile</strong> et plus belle que la flûte de Pan.<br />
+            la lyre est selon lui plus <button class="popup-button" data-modal="popup3">subtile</button> et plus belle que la flûte de Pan.<br />
             Midas a assisté au concours, il a lui aussi écouté les dieux jouer.<br />
             Midas est-il d'accord avec le juge ?</p>
             
             
-        	<button id="pan6" class="panButton7">Oui</button>
-            <button id="pan5" class="panButton8">Non</button>
+        	<button id="pan6" class="bpan panButton7">Oui</button>
+            <button id="pan5" class="bpan panButton8">Non</button>
         </span>
         
         
@@ -173,7 +178,7 @@ img.btn_close {
         	<img class="pan-img" src="../css/img/pan/PanD.jpg" />
         	<p id="p7">Midas contredit le mont Tmole ; pour lui, la musique de Pan est bien plus belle que celle d'Apollon !</p>
             
-            <button id="pan7" class="panButton9"><img src="../css/img/pan/fleche-suite.png" /></button>
+            <button id="pan7" class="bpan panButton9"><img src="../css/img/pan/fleche-suite.png" /></button>
             
 
         </span>
@@ -184,7 +189,7 @@ img.btn_close {
             
             <p id="p8bis">Retourne au choix précédent !</p>
             
-        	<button id="pan4" class="panButton10"><img src="../css/img/pan/fleche.png" /></button>
+        	<button id="pan4" class="bpan panButton10"><img src="../css/img/pan/fleche.png" /></button>
         </span>
         
         
@@ -200,7 +205,7 @@ img.btn_close {
             
             <p id="p9bis">Quelles conclusions peut-on tirer de cette histoire ?</p>
             
-        	<button id="pan8" class="panButton11"><img src="../css/img/pan/fleche-suite.png" /></button>
+        	<button id="pan8" class="bpan panButton11"><img src="../css/img/pan/fleche-suite.png" /></button>
         </span>
         <span id="pan8">
         	<img class="pan-img" src="../css/img/pan/PanF.jpg" />
@@ -216,8 +221,8 @@ img.btn_close {
             Il aurait du réfléchir avant de contredire<br />
             le juge, mais il avait le droit de préférer<br />
             la musique de Pan : personne ne devrait<br />
-            être condamné à cause de ses goûts,<br />
-            chacun a le droit d'avoir ses propres opinions.<br />
+            être condamné à cause de ses goûts<br />
+            et chacun a le droit d'avoir ses propres opinions.<br />
             Même si ce n'est pas facile, tu dois accepter<br />
             que l'on ne pense pas toujours comme toi.</p>
             
@@ -235,7 +240,7 @@ img.btn_close {
 
 
 <script>
-$("span button").click(function() {
+$("span .bpan ").click(function() {
     var id = $(this).attr("id");
     $("#panGlobal span").css("display", "none");
     $("#panGlobal span#" + id + "").fadeIn('slow').css({
@@ -246,5 +251,18 @@ $("span button").click(function() {
 });
 $("#panGlobal span:not(#pan1)").css("display", "none");
 </script>
+
+		<div class="overlay"></div><!-- La div overlay -->
+		
+		<!-- Le script qui crée la popup -->
+		<script src="../js/popup.js"></script>
+
+		<!-- Pour l'effet blur -->
+		<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+		<script>
+			// this is important for IEs
+			var polyfilter_scriptpath = '/js/';
+		</script>
+		<script src="../js/cssParser.js"></script>
 </body>
 </html>

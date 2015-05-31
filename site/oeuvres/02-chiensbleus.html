@@ -5,17 +5,32 @@
 <title>Les chiens bleus</title>
 <link href="../css/Style.css" rel="stylesheet" type="text/css">
 <style>
-.chiens-buttons {
+
+li.chiens-buttons {
 	position:absolute;
 	width:200px;
 	height:200px;
-	border-radius:50%;
-	border:20px solid #0C0;
-	background:none;	
+	border-radius:50%;	
 	}
+.chiens-buttons button {
+	height: inherit;
+  	width: inherit;
+	  margin: 0;
+	  padding: 0;
+	  border-radius: 50%;	  
+	  background: none;
+	  cursor:default;
+	  border-color:#fff;
+	  opacity:0;
+	  
+	}
+.chiens-buttons .blob {opacity:1;border: 10px dashed #8EFF8E;transition:all 0.3s linear;}
+
 #chiens-button1 {
-top: 220px;
-left: 323px;
+top: 159px;
+  left: 226px;
+  width: 400px;
+  height: 400px;
   }
 #chiens-button2 {
 top: 600px;
@@ -72,6 +87,14 @@ left: 853px;
 
 </section> <!--section secondaire-->
 </section> <!--section principale-->
+
+<script>
+$(document).ready(function() {
+  $('.chiens-buttons button').click(function() {
+    $(this).toggleClass('blob');
+  });
+});
+</script>
 
 </body>
 </html>

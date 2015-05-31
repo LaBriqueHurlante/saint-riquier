@@ -6,51 +6,41 @@
 <link href="../css/Style.css" rel="stylesheet" type="text/css">
 <style>
 
+.plume-svg {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:0;	
+	}
 
 
-.plume {
-	position: absolute;
-	top: 20%;
-	left: 40%;
-	-webkit-animation: plume 10s infinite linear backwards;
-}
-@-webkit-keyframes 
-plume {  0% {
-transform:rotate(-45deg)
-}
- 50% {
-transform:rotate(0deg);
-}
- 100% {
-transform:rotate(-45deg)
-}
-}
 </style>
 <script src="../js/jquery-1.11.2.min.js"></script>
 <script src="../js/scroll.js"></script>
-<script src="../js/parallax.min.js"></script>
 <script src="../js/interact-1.2.4.js"></script>
 </head>
 
 <body>
 <nav> <a href="#section1">Section 1</a> <a href="#section2">Section 2</a> </nav>
 <section class="page">
-  <div class="clouds"  data-parallax="scroll" data-z-index="-1" data-image-src="../css/img/clouds.jpg" data-image-repeat="repeat">
+
     <section id="section1" class="section section1">
-      <section class="bloc tiny">
+
         <h1>Chevelure de Bérénice - Curiosity</h1>
-      </section>
+        
+        <object class="plume-svg" type="image/svg+xml" data="../css/img/plumes/berenice-ecran1.svg" width="2048" height="1536"></object>
+
     </section>
     <!--section premiere-->
     
     <section id="section2" class="section section2">
-      <section class="bloc tiny">
+
         <h1>Jeux</h1>
+         <object class="plume-svg" type="image/svg+xml" data="../css/img/plumes/berenice-ecran2.svg" width="2048" height="1536"></object>
+
       </section>
-      <img class="plume" src="../css/img/plume1.png" /> </section>
     <!--section secondaire--> 
-    
-  </div>
+
 </section>
 <!--section principale--> 
 
