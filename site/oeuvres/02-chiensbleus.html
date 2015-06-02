@@ -4,62 +4,10 @@
 <meta charset="utf-8">
 <title>Les chiens bleus</title>
 <link href="../css/Style.css" rel="stylesheet" type="text/css">
-<style>
+<link href="../css/popup.css" rel="stylesheet" type="text/css">
 
-li.chiens-buttons {
-	position:absolute;
-	width:200px;
-	height:200px;
-	border-radius:50%;	
-	}
-.chiens-buttons button {
-	height: inherit;
-  	width: inherit;
-	  margin: 0;
-	  padding: 0;
-	  border-radius: 50%;	  
-	  background: none;
-	  cursor:default;
-	  border-color:#fff;
-	  opacity:0;
-	  
-	}
-.chiens-buttons .blob {opacity:1;border: 10px dashed #8EFF8E;transition:all 0.3s linear;}
-
-#chiens-button1 {
-top: 159px;
-  left: 226px;
-  width: 400px;
-  height: 400px;
-  }
-#chiens-button2 {
-top: 600px;
-left: 853px;
-}
-#chiens-button3 {
-	top: 800px;
-  left: 1193px;
-  }
-#chiens-button4 {
-	top: 370px;
-  left: 1363px;
-  }
-#chiens-button5 {
-	top: 520px;
-  left: 1673px;
-  }
-#chiens-button6 {
-	top: 800px;
-  left: 1513px;
-  }
-#chiens-button7 {
-	top: 1080px;
-  left: 1463px;
-  }
-</style>
 <script src="../js/jquery-1.11.2.min.js"></script>
 <script src="../js/scroll.js"></script>
-<script src="../js/menu.js"></script>
 
 
 </head>
@@ -88,10 +36,13 @@ left: 853px;
 </section> <!--section secondaire-->
 </section> <!--section principale-->
 
+		<script src="../js/popup.js"></script>
+        <script src="../js/jquery.foggy.min.js"></script>
+        <script src="../js/menu.js"></script>
 <script>
 $(document).ready(function() {
   $('.chiens-buttons button').click(function() {
-    $(this).toggleClass('blob');
+    $(this).addClass('blob');
   });
 });
 </script>

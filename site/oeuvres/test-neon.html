@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>titre</title>
+<link href="../css/Style.css" rel="stylesheet" type="text/css">
+<link href="../css/popup.css" rel="stylesheet" type="text/css">
+<style>
+	body {background:black;}
+	#carre {
+	width: 1000px;
+  height: 1000px;
+  background: #e3e3e3;
+  position: absolute;
+  left: 25%;
+  top: 15%;
+  
+  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+	}
+@-webkit-keyframes neon2 {
+  from {
+    box-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #228DFF,
+               0 0 70px  #228DFF,
+               0 0 80px  #228DFF,
+               0 0 100px #228DFF,
+               0 0 150px #228DFF;
+  }
+  to {
+    box-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #228DFF,
+               0 0 35px #228DFF,
+               0 0 40px #228DFF,
+               0 0 50px #228DFF,
+               0 0 75px #228DFF;
+  }
+}
+</style>
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/scroll.js"></script>
+
+
+</head>
+
+<body>
+
+<section class="page">
+<section id="section1" class="section section1">
+
+	<div id="carre">
+    	<a href="http://codepen.io/NobodyRocks/pen/qzfoc" target="_blank">http://codepen.io/NobodyRocks/pen/qzfoc</a>
+    </div>
+
+</section> <!--section premiere-->
+<section id="section2" class="section section2"></section> <!--section secondaire-->
+</section> <!--section principale-->
+
+<div class="overlay"></div><!-- La div overlay -->
+
+		<script src="../js/popup.js"></script>
+        <script src="../js/jquery.foggy.min.js"></script>
+        <script src="../js/menu.js"></script>
+        
+        <script>
+		
+		// EN COURS
+		
+        	var newColor = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
+jQuery(".font-style").animate({color: newColor}, 2000); // animate
+        </script>
+</body>
+</html>

@@ -8,6 +8,8 @@ var popup = (function()
 	function init() {
 
 		var overlay = $('.overlay');
+		var sectionBlur = $('.page');
+		
 
 		$('.popup-button').each(function(i, el)
 		{
@@ -17,6 +19,7 @@ var popup = (function()
 			// fonction qui enleve la class .show de la popup et la fait disparaitre
 			function removeModal() {
 				modal.removeClass('show');
+				sectionBlur.foggy(false);
 			}
 
 			// evenement qui appelle la fonction removeModal()
@@ -29,6 +32,14 @@ var popup = (function()
 			{	
 				modal.addClass('show');
 				overlay.unbind("click");
+				sectionBlur.foggy(
+				{
+   blurRadius: 20,          // In pixels.
+   opacity: 0.8,           // Falls back to a filter for IE.
+   cssFilterSupport: true  // Use "-webkit-filter" where available.
+ }
+				);	
+
 				// on ajoute sur l'overlay la fonction qui permet de fermer la popup
 				overlay.bind("click", removeModalHandler);
 			});
@@ -38,6 +49,7 @@ var popup = (function()
 			{
 				event.stopPropagation();
 				removeModalHandler();
+				
 			});
 
 		});

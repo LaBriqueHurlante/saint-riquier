@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>plante verte</title>
 <link href="../css/Style.css" rel="stylesheet" type="text/css">
+<link href="../css/popup.css" rel="stylesheet" type="text/css">
 <style>
 	body {overflow:hidden;}
 	.page {width:4188px;height:1536px;}
@@ -15,19 +16,42 @@
 		position:absolute;
 		z-index:1;	
 		}
+#bouton1 {
+	top: 481px;
+  left: 754px;
+  position: absolute;
+  color: red;
+  font-family: source;
+  font-size: 50px;
+  }
+
 
 </style>
 <script src="../js/jquery-1.11.2.min.js"></script>
 <script src="../js/jquery-ui.min.js"></script>
 <script src="../js/plante.js"></script>
 <script src="../js/scroll.js"></script>
-<script src="../js/menu.js"></script>
 
 
 
 </head>
 
 <body>
+
+		<!-- LE CONTENU DE LA POPUP 1 -->
+		<div class="modal blur-effect" id="popup1">
+			<div class="popup-content">
+				<h3>figuratif</h3>
+				<div>
+					<p class="para">L'art figuratif représente les objets, les êtres humains de manière à ce qu'on les reconnaisse facilement.<br /> 
+                    Le contraire de figuratif, c'est l'abstrait.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+
+
 
 <button id="boutonMenu" onClick="fonctionTest()"><img src="../css/img/nav/icone-menu.png" /></button>
 <div id="nav" class="ferme"><h1>PLAN DE L'EXPO</h1><img src="../css/img/plan_musee.png" usemap="#map" /><map name="map"><area shape="circle" coords="173,75,50" href="oeuvres/02.html" alt="Accueil" /></map></div>
@@ -36,7 +60,8 @@
 <section class="page">
 <section id="section1" class="section section1">
 
-	<img src="../css/img/aillaud/plante-ptitre.png" />
+	<img src="../css/img/aillaud/aillaud-ptitre.png" />
+    <button id="bouton1" class="popup-button" data-modal="popup1">figuratif</button>
 
 </section> <!--section premiere-->
 <section id="section2" class="section section2">
@@ -93,26 +118,24 @@
 
 <li style="top: 1421px; left: 809px;" ><img src="../css/img/aillaud/svg/singe6_xA0_Image.png" width="74" height="101"></li>
 
-<li style="top: 1199px; left: 527px;" ><img src="../css/img/aillaud/svg/zebre1_xA0_Image.png" width="207" height="173"></li>
 
 <li style="top: 1135px; left: 727px;" ><img src="../css/img/aillaud/svg/zebre2_xA0_Image.png" width="190" height="174"></li>
 
-<li style="top: 1370px; left: 256px;" ><img src="../css/img/aillaud/svg/bulle.png" width="70" height="36"></li>
+<li style="top: 1199px; left: 527px;" ><img src="../css/img/aillaud/svg/zebre1_xA0_Image.png" width="207" height="173"></li>
 
-<li style="top: 1356px; left: 107px;" ><img src="../css/img/aillaud/svg/piaf.png" width="161" height="172"></li>
+<li id="plante-fond" style="right:-1px; z-index:-1" ><img src="../css/img/aillaud/svg/fond.png" width="1195" height="1536"></li>
 
-<li style="right:-1px; z-index:-1" ><img src="../css/img/aillaud/svg/fond.png" width="1195" height="1536"></li>
-
-<li style="left: -250px;z-index:0" ><img src="../css/img/aillaud/svg/cielsoleil.png" width="1196" height="1002"></li>
+<li id="cielsoleil" style="left: -250px;z-index:0" ><img src="../css/img/aillaud/svg/cielsoleil.png" width="1196" height="1002"></li>
 
 </ul>
-
-
-
-</object>
 
 </section> <!--section secondaire-->
 </section> <!--section principale-->
 
+		<div class="overlay"></div><!-- La div overlay -->
+		<script src="../js/popup.js"></script>
+        <script src="../js/jquery.foggy.min.js"></script>
+        <script src="../js/menu.js"></script>
+        
 </body>
 </html>

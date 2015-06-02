@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>Chevelure de Bérénice - Curiosity</title>
 <link href="../css/Style.css" rel="stylesheet" type="text/css">
+<link href="../css/popup.css" rel="stylesheet" type="text/css">
 <style>
 
 .plume-svg {
@@ -12,8 +13,34 @@
 	left:0;
 	z-index:0;	
 	}
+.berenice-titre {
+position: absolute;
+top: 110px;
+  left: 210px;
+  width: 1000px;
+  z-index: 10;	
+	}
+.section1 button, .section2 button {
+  position: absolute;
+  color: red;
+  font-family: source;
+  font-size: 40px;
+ }
+#berenice-bouton1 {top: 345px;left: 1680px;}
+#berenice-bouton2 {top: 496px;left: 1370px;}
+#berenice-bouton3 {top: 992px;left: 1172px;font-size: 37px;}
+#berenice-bouton4 {top: 102px;left: 365px;}
+#berenice-bouton5 {top: 250px;left: 937px;}
+#berenice-bouton6 {top: 907px;left: 834px;}
 
-
+#popup3 {
+width: 100%;
+max-width: 1730px;
+}
+#popup4 {
+width: 100%;
+  max-width: 1430px;
+}
 </style>
 <script src="../js/jquery-1.11.2.min.js"></script>
 <script src="../js/scroll.js"></script>
@@ -21,28 +48,113 @@
 </head>
 
 <body>
-<nav> <a href="#section1">Section 1</a> <a href="#section2">Section 2</a> </nav>
+
+<button id="boutonMenu" onClick="fonctionTest()"><img src="../css/img/nav/icone-menu.png" /></button>
+<div id="nav" class="ferme"><h1>PLAN DE L'EXPO</h1><img src="../css/img/plan_musee.png" usemap="#map" /><map name="map"><area shape="circle" coords="173,75,50" href="oeuvres/02.html" alt="Accueil" /></map></div>
+<a id="boutonHome" href="#section1"><img src="../css/img/nav/icone-home.png" /></a>
+
 <section class="page">
 
     <section id="section1" class="section section1">
-
-        <h1>Chevelure de Bérénice - Curiosity</h1>
         
-        <object class="plume-svg" type="image/svg+xml" data="../css/img/plumes/berenice-ecran1.svg" width="2048" height="1536"></object>
+        <img class="berenice-titre" src="../css/img/plumes/Berenice-titre.svg" />
+        <img src="../css/img/plumes/ecran1.png" width="2048" height="1536" />
+        
+        <button id="berenice-bouton1" class="popup-button" data-modal="popup1">goéland</button>
+        <button id="berenice-bouton2" class="popup-button" data-modal="popup2">cire</button>
+        <button id="berenice-bouton3" class="popup-button" data-modal="popup3">constellation</button>
+        
 
     </section>
     <!--section premiere-->
     
     <section id="section2" class="section section2">
 
-        <h1>Jeux</h1>
-         <object class="plume-svg" type="image/svg+xml" data="../css/img/plumes/berenice-ecran2.svg" width="2048" height="1536"></object>
+         <img src="../css/img/plumes/ecran2.png" width="2048" height="1536" />
+         
+         <button id="berenice-bouton4" class="popup-button" data-modal="popup4">Alexandrie</button>
+         <button id="berenice-bouton5" class="popup-button" data-modal="popup5">Aphrodite</button>
+         <button id="berenice-bouton6" class="popup-button" data-modal="popup6">astronome</button>
 
       </section>
     <!--section secondaire--> 
 
 </section>
-<!--section principale--> 
+<!--section principale-->
+
+		<!-- LE CONTENU DE LA POPUP 1 -->
+		<div class="modal blur-effect" id="popup1">
+			<div class="popup-content">
+				<h3>goéland</h3>
+				<div>
+					<p class="para">Le goéland est un oiseau marin de la famille des Laridés. Proche de la mouette, il se distingue d’elle par sa taille.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+        		<!-- LE CONTENU DE LA POPUP 2 -->
+		<div class="modal blur-effect" id="popup2">
+			<div class="popup-content">
+				<h3>cire</h3>
+				<div>
+					<p class="para">La cire est une substance fabriquée par les abeilles.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+        		<!-- LE CONTENU DE LA POPUP 3 -->
+		<div class="modal blur-effect" id="popup3">
+			<div class="popup-content">
+				<h3>constellation</h3>
+				<div>
+					<p class="para">Une constellation est un groupe d’étoiles. Celle de la Chevelure de Bérénice n'est pas très lumineuse et comprend beaucoup d'étoiles et de galaxies ; de la Terre, on ne remarque pas de forme particulière, on dirait que la constellation s'étale comme une chevelure de milliers d'étoiles.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+        		<!-- LE CONTENU DE LA POPUP 4 -->
+		<div class="modal blur-effect" id="popup4">
+			<div class="popup-content">
+				<h3>Alexandrie</h3>
+				<div>
+					<p class="para">Alexandrie était une ville d'Egypte fondée par Alexandre le Grand, qui n'était pas égyptien mais grec. C'était un grand centre de la culture grecque en Egypte ; on y priait donc les dieux grecs.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+        		<!-- LE CONTENU DE LA POPUP 5 -->
+		<div class="modal blur-effect" id="popup5">
+			<div class="popup-content">
+				<h3>Aphrodite</h3>
+				<div>
+					<p class="para">Aphrodite est le nom grec de Vénus, la déesse de l'amour et de la beauté.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+        		<!-- LE CONTENU DE LA POPUP 6 -->
+		<div class="modal blur-effect" id="popup6">
+			<div class="popup-content">
+				<h3>astronome</h3>
+				<div>
+					<p class="para">Un astronome est un scientifique qui observe et étudie les étoiles.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+
+		<div class="overlay"></div><!-- La div overlay -->
+		
+		<!-- Le script qui crée la popup -->
+		<script src="../js/popup.js"></script>
+        <script src="../js/jquery.foggy.min.js"></script>
+        <script src="../js/menu.js"></script>
 
 <script>
 $(document).ready(function(){
@@ -51,7 +163,7 @@ $(document).ready(function(){
 function creaPlume(){
 	
 //taille aléatoire
-var divsize = ((Math.random()*170) + 50).toFixed();
+var divsize = ((Math.random()*170) + 250).toFixed();
 
 //rotation aléatoire (voir son CSS ci-dessous)
 var rotaPlume = Math.floor((Math.random() * -60) + 1);
@@ -60,13 +172,15 @@ var rotaPlume = Math.floor((Math.random() * -60) + 1);
 $plume = $('<div class="draggable">').css({
 	'width':divsize+'px',
 	'height':divsize+'px',
-	'background-image': 'url(../css/img/plume1.png)',
-	'background-size': '100%'
+	'background-image': 'url(../css/img/plumes/plume3.png)',
+	'background-size': '100%',
+	'background-repeat': 'no-repeat',
+	'cursor': 'default'
 });
 
 // Dans la section2, on définit une position absolue aléatoire
-	var posx = (Math.random() * ($('#section2').width() - divsize)).toFixed();
-    var posy = (Math.random() * ($('#section2').height() - divsize)).toFixed();
+	var posx = (Math.random() * ($('.page').width() - divsize)).toFixed();
+    var posy = (Math.random() * ($('.page').height() - divsize)).toFixed();
 
 $plume.css({
 	    'position':'absolute',
@@ -76,7 +190,7 @@ $plume.css({
 
 //On fait apparaitre tout ça dans la section2
 }).appendTo( 
-		'#section2' 
+		'.page' 
 		
 )}
 
