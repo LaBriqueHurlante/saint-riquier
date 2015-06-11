@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>titre</title>
+<link href="../css/Style.css" rel="stylesheet" type="text/css">
+<link href="../css/popup.css" rel="stylesheet" type="text/css">
+<style>
+#img1 {
+	position: absolute;
+  bottom: 0;
+ left: 400px;
+ z-index:2; 
+  }
+.contenant-interaction {
+	position: absolute;
+  width: 304px;
+  height: 838px;
+  border: solid 2px;
+  bottom: 320px;
+  left: 460px;
+  z-index: 3;
+  }
+.carre-interaction {
+position: absolute;
+  width: 120px;
+  height: 170px;
+  border: solid 2px red;
+  bottom: 0px;
+  left: 110px;
+  }
+.image-animal {
+	position: absolute;
+  bottom: 0px;
+  left: -100px;
+  }
+ .animal {position: absolute;}
+</style>
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/jquery.pep.js"></script>
+
+<script src="../js/scroll.js"></script>
+<script>
+  jQuery(function($) {
+    $('.carre-interaction').pep({
+  axis: 'y',
+  constrainTo: 'parent'
+})
+  });
+</script>
+
+
+</head>
+
+<body>
+
+<section class="page">
+<section id="section1" class="section section1">
+
+	<img id="img1" src="../css/img/petrovitch/gens.png" />
+ 
+    
+    <div class="contenant-interaction" style="position:absolute !important">
+    	<div class="carre-interaction">
+        	<div class="image-animal"><img class="animal" id="img2"  src="../css/img/petrovitch/papillon.png" /></div>
+        </div>
+    </div>
+
+</section> <!--section premiere-->
+<section id="section2" class="section section2"></section> <!--section secondaire-->
+</section> <!--section principale-->
+
+<div class="overlay"></div><!-- La div overlay -->
+
+		<script src="../js/popup.js"></script>
+        <script src="../js/jquery.foggy.min.js"></script>
+        <script src="../js/menu.js"></script>
+</body>
+</html>

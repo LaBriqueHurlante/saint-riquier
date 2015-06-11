@@ -82,6 +82,16 @@ h2 {font-family:josefinL;}
   overflow: hidden;
   z-index:11;
   }
+
+#nav li {display: block;}
+#nav a {
+text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  padding: 25px;
+  font-family: josefin;
+}
+
   .ouvre {
 	  transition:all ease-in .3s;
 	  transform:scale(1);

@@ -5,8 +5,8 @@
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	width: 50%;
-	max-width: 1100px;
+	width: 100%;
+  max-width: 1450px;
 	min-width: 250px;
 	height: auto;
 	z-index: 2000;

@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Petrovitch</title>
+<link href="../css/Style.css" rel="stylesheet" type="text/css">
+<link href="../css/popup.css" rel="stylesheet" type="text/css">
+<style>
+.popup-button {
+color: #00052D;
+  position: absolute;
+  font-family: Josefin;
+  font-size: 50px;
+  }
+#bouton1 {
+	top: 482px;
+  left: 541px;
+  font-style: italic;
+  font-size: 60px;
+  }
+#bouton2 {
+	top: 947px;
+  left: 650px;
+  }
+#bouton3 {
+top: 1025px;
+  left: 598px;	
+	}
+#popup3 {
+	  width: 100%;
+  max-width: 1700px;
+  }
+#personnes li, #animaux li {position:absolute;}
+#personnes li {bottom:-11px;}
+#animaux li {}
+</style>
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/scroll.js"></script>
+
+
+</head>
+
+<body>
+		<!-- LE CONTENU DE LA POPUP 1 -->
+		<div class="modal blur-effect" id="popup1">
+			<div class="popup-content">
+				<h3>Vanité</h3>
+				<div>
+					<p class="para">En peinture, une vanité est un tableau qui montre, par des objets et des détails, le temps qui passe : fleur fanée, fruit moisi.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+        		<!-- LE CONTENU DE LA POPUP 2 -->
+		<div class="modal blur-effect" id="popup2">
+			<div class="popup-content">
+				<h3>siamois</h3>
+				<div>
+					<p class="para">Les enfants siamois sont des jumeaux nés attachés l’un à l’autre. La médecine peut souvent les séparer après leur naissance.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+        		<!-- LE CONTENU DE LA POPUP 3 -->
+		<div class="modal blur-effect" id="popup3">
+			<div class="popup-content">
+				<h3>couleurs</h3>
+				<div>
+					<p class="para">Les trois couleurs primaires sont le rouge, le bleu et le jaune. C’est à partir de ces trois couleurs que l’on peut obtenir toutes les autres. Il existe des couleurs froides, comme le bleu, le vert et le violet, et d’autres chaudes, comme le jaune, l’orange, le rouge et le rose.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+
+<!-- MENU -->
+<button id="boutonMenu" onClick="fonctionTest()"><img src="../css/img/nav/icone-menu.png" /></button>
+<div id="nav" class="ferme"><ul style="list-style:none;">
+	<li style="font-size:60px;margin:15px; padding:15px;"><a href="01-plumes.html">01-plumes</a></li>
+    <li style="font-size:60px;margin:15px; padding:15px;"><a href="02-chiensbleus.html">02-chiensbleus</a></li>
+    <li style="font-size:60px;margin:15px; padding:15px;"><a href="03-pan.html">03-pan</a></li>
+    <li style="font-size:60px;margin:15px; padding:15px;"><a href="04.html">04</a></li>
+    <li style="font-size:60px;margin:15px; padding:15px;"><a href="05-plante.html">05-plante</a></li>
+    <li style="font-size:60px;margin:15px; padding:15px;"><a href="06-patchwork.html">06-patchwork</a></li>
+    <li style="font-size:60px;margin:15px; padding:15px;"><a href="07-venus.html">07-venus</a></li>
+    <li style="font-size:60px;margin:15px; padding:15px;"><a href="08-petrovitch.html">08-petrovitch</a></li>
+    <li style="font-size:60px;margin:15px; padding:15px;"><a href="09-balpe.html">09-balpe</a></li>
+    <li style="font-size:60px;margin:15px; padding:15px;"><a href="10-comar.html">10-comar</a></li>
+    <li style="font-size:60px;margin:15px; padding:15px;"><a href="11-cadet.html">11-cadet</a></li>
+</ul></div>
+<a id="boutonHome" href="#section1"><img src="../css/img/nav/icone-home.png" /></a>
+<!-- FIN MENU -->
+
+<section class="page">
+<section id="section1" class="section section1">
+	<img src="../css/img/petrovitch/petro-ecran1.jpg" />
+    <button id="bouton1" class="popup-button" data-modal="popup1">Vanité.</button>
+    <button id="bouton2" class="popup-button" data-modal="popup2">siamois</button>
+    <button id="bouton3" class="popup-button" data-modal="popup3">couleurs</button>
+</section> <!--section premiere-->
+<section id="section2" class="section section2">
+
+
+
+		
+		<ul id="animaux">
+    	<li><img src="../css/img/petrovitch/dauphin.png" /></li>
+        <li><img src="../css/img/petrovitch/papillon.png" /></li>
+        <li><img src="../css/img/petrovitch/lezard.png" /></li>
+        <li><img src="../css/img/petrovitch/ecureuil.png" /></li>
+        <li><img src="../css/img/petrovitch/cheval.png" /></li>
+        <li><img src="../css/img/petrovitch/manchot.png" /></li>
+        <li><img src="../css/img/petrovitch/oiseau.png" /></li>
+        <li><img src="../css/img/petrovitch/chat.png" /></li>
+        <li><img src="../css/img/petrovitch/chien.png" /></li>
+    </ul>
+    
+    <ul id="personnes">
+    	<li style="left: 496px;"><img src="../css/img/petrovitch/1.png" /></li>
+        <li style="left: 393px;"><img src="../css/img/petrovitch/2.png" /></li>
+        <li style="left: 660px;"><img src="../css/img/petrovitch/3.png" /></li>
+        <li style="left: 766px;"><img src="../css/img/petrovitch/4.png" /></li>
+        <li style="left: 950px; bottom: 349px;"><img src="../css/img/petrovitch/5.png" /></li>
+        <li style="left: 870px;"><img src="../css/img/petrovitch/6.png" /></li>
+        <li style="left: 1210px; bottom: 19px;"><img src="../css/img/petrovitch/7.png" /></li>
+        <li style="left: 1290px;"><img src="../css/img/petrovitch/8.png" /></li>
+        <li style="left: 1460px; bottom: 159px;"><img src="../css/img/petrovitch/9.png" /></li>
+    </ul>
+    
+</section> <!--section secondaire-->
+</section> <!--section principale-->
+
+<div class="overlay"></div><!-- La div overlay -->
+
+		<script src="../js/popup.js"></script>
+        <script src="../js/jquery.foggy.min.js"></script>
+        <script src="../js/menu.js"></script>
+</body>
+</html>
+
