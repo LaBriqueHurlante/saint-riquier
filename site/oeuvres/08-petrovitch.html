@@ -4,8 +4,10 @@
 <meta charset="utf-8">
 <title>Petrovitch</title>
 <link href="../css/Style.css" rel="stylesheet" type="text/css">
+<link href="../css/animate.min.css" rel="stylesheet" type="text/css">
 <link href="../css/popup.css" rel="stylesheet" type="text/css">
 <style>
+.section2 {background:url(../css/img/petrovitch/fond-jeu.svg) no-repeat;}
 .popup-button {
 color: #00052D;
   position: absolute;
@@ -30,11 +32,24 @@ top: 1025px;
 	  width: 100%;
   max-width: 1700px;
   }
-#personnes li, #animaux li {position:absolute;}
-#personnes li {bottom:-11px;}
-#animaux li {}
+#img0 {
+	position: absolute;
+  bottom: 0;
+ left: 400px;
+ z-index:2; 
+  }
+
+
+.image-animal {
+	position: absolute;
+  bottom: 0px;
+  left: 0px;
+  }
+ .animal {}
+ .animal2 {}
 </style>
 <script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
 <script src="../js/scroll.js"></script>
 
 
@@ -103,31 +118,58 @@ top: 1025px;
 <section id="section2" class="section section2">
 
 
+	<img id="img0" src="../css/img/petrovitch/gens2.png" />
+    
+    <div id="int1" class="carre-interaction"></div>
+    <div id="int2" class="carre-interaction"></div>
+ 	<div id="int3" class="carre-interaction"></div>
+    <div id="int4" class="carre-interaction"></div>
+    <div id="int5" class="carre-interaction"></div>
+    <div id="int6" class="carre-interaction"></div>
+    <div id="int7" class="carre-interaction"></div>
+    <div id="int8" class="carre-interaction"></div>
+    <div id="int9" class="carre-interaction"></div>
+    
+    
+    
+    
+    <div id="divImg1" class="contenant-interaction" style="position:absolute !important">   			
+        	<div class="image-animal"><img class="animal" id="img1"  src="../css/img/petrovitch/dauphin.png" /></div>
+	</div>
+    
+    <div id="divImg2" class="contenant-interaction" style="position:absolute !important">                       
+            <div class="image-animal"><img class="animal" id="img2"  src="../css/img/petrovitch/papillon.png" /></div>
+	</div>
+    
+    <div id="divImg3" class="contenant-interaction" style="position:absolute !important">                       
+            <div class="image-animal"><img class="animal" id="img3"  src="../css/img/petrovitch/lezard.png" /></div>
+ 	</div>
+    
+    <div id="divImg4" class="contenant-interaction" style="position:absolute !important">                      
+            <div class="image-animal"><img class="animal" id="img4"  src="../css/img/petrovitch/ecureuil.png" /></div>
+	</div>
+    
+    <div id="divImg5" class="contenant-interaction" style="position:absolute !important">                       
+            <div class="image-animal"><img class="animal" id="img5"  src="../css/img/petrovitch/cheval.png" /></div>
+	</div>
+    
+    <div id="divImg6" class="contenant-interaction" style="position:absolute !important">                       
+            <div class="image-animal"><img class="animal" id="img6"  src="../css/img/petrovitch/manchot.png" /></div>
+	</div>
+    
+    <div id="divImg7" class="contenant-interaction" style="position:absolute !important">                       
+            <div class="image-animal"><img class="animal" id="img7"  src="../css/img/petrovitch/oiseau.png" /></div>
+	</div>
+    
+    <div id="divImg8" class="contenant-interaction" style="position:absolute !important">                       
+            <div class="image-animal"><img class="animal" id="img8"  src="../css/img/petrovitch/chat.png" /></div>
+ 	</div>
+    
+    <div id="divImg9" class="contenant-interaction" style="position:absolute !important">                      
+            <div class="image-animal"><img class="animal" id="img9"  src="../css/img/petrovitch/chien.png" /></div>        
+    </div>
 
 		
-		<ul id="animaux">
-    	<li><img src="../css/img/petrovitch/dauphin.png" /></li>
-        <li><img src="../css/img/petrovitch/papillon.png" /></li>
-        <li><img src="../css/img/petrovitch/lezard.png" /></li>
-        <li><img src="../css/img/petrovitch/ecureuil.png" /></li>
-        <li><img src="../css/img/petrovitch/cheval.png" /></li>
-        <li><img src="../css/img/petrovitch/manchot.png" /></li>
-        <li><img src="../css/img/petrovitch/oiseau.png" /></li>
-        <li><img src="../css/img/petrovitch/chat.png" /></li>
-        <li><img src="../css/img/petrovitch/chien.png" /></li>
-    </ul>
-    
-    <ul id="personnes">
-    	<li style="left: 496px;"><img src="../css/img/petrovitch/1.png" /></li>
-        <li style="left: 393px;"><img src="../css/img/petrovitch/2.png" /></li>
-        <li style="left: 660px;"><img src="../css/img/petrovitch/3.png" /></li>
-        <li style="left: 766px;"><img src="../css/img/petrovitch/4.png" /></li>
-        <li style="left: 950px; bottom: 349px;"><img src="../css/img/petrovitch/5.png" /></li>
-        <li style="left: 870px;"><img src="../css/img/petrovitch/6.png" /></li>
-        <li style="left: 1210px; bottom: 19px;"><img src="../css/img/petrovitch/7.png" /></li>
-        <li style="left: 1290px;"><img src="../css/img/petrovitch/8.png" /></li>
-        <li style="left: 1460px; bottom: 159px;"><img src="../css/img/petrovitch/9.png" /></li>
-    </ul>
     
 </section> <!--section secondaire-->
 </section> <!--section principale-->
@@ -137,6 +179,7 @@ top: 1025px;
 		<script src="../js/popup.js"></script>
         <script src="../js/jquery.foggy.min.js"></script>
         <script src="../js/menu.js"></script>
+        <script src="../js/petrovitch.js"></script>
 </body>
 </html>
 

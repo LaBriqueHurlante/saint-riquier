@@ -8,7 +8,15 @@
 
 <script src="../js/jquery-1.11.2.min.js"></script>
 <script src="../js/scroll.js"></script>
-
+<style>
+#bouton1 {
+top: 1205px;
+  left: 1363px;
+  position: absolute;
+  color: red;
+  font-size: 40px;
+  }
+</style>
 
 </head>
 
@@ -32,9 +40,22 @@
 <a id="boutonHome" href="#section1"><img src="../css/img/nav/icone-home.png" /></a>
 <!-- FIN MENU -->
 
+		<!-- LE CONTENU DE LA POPUP 1 -->
+		<div class="modal blur-effect" id="popup1">
+			<div class="popup-content">
+				<h3>Saqqarah</h3>
+				<div>
+					<p class="para">C'est une ville d’Egypte.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+
 <section class="page">
 <section id="section1" class="section section1">
 	<img src="../css/img/chiens-bleus/cueco-fondtitre.svg" />
+    <button id="bouton1" class="popup-button" data-modal="popup1">Saqqarah</button>
 </section> <!--section premiere-->
 <section id="section2" class="section section2">
 
@@ -51,6 +72,8 @@
 
 </section> <!--section secondaire-->
 </section> <!--section principale-->
+
+<div class="overlay"></div><!-- La div overlay -->
 
 		<script src="../js/popup.js"></script>
         <script src="../js/jquery.foggy.min.js"></script>

@@ -43,6 +43,13 @@ ul{
 }
 button:focus {outline:none;}
 
+.popup-button {
+color: #00052D;
+  position: absolute;
+  font-family: Josefin;
+  font-size: 50px;
+  }
+
 /*FONTS*/
 
 h2 {font-family:josefinL;}
@@ -238,3 +245,100 @@ top: 385px;
  top: 1094px;
   left: 1474px;
   }
+  
+/*Petrovitch*/
+
+.contenant-interaction {
+position: absolute;
+  width: 304px;
+  height: 938px;
+/*  border: solid 2px;*/
+  bottom: 500px;
+  left: 460px;
+  z-index: 0;
+
+  }
+.carre-interaction {
+position: absolute;
+  width: 120px;
+  height: 170px;
+/*  border: solid 2px red;*/
+  z-index: 10;
+  }
+#int1 {
+  bottom: 520px;
+  left: 500px;
+}
+#int2 {
+  left: 570px;
+  bottom: 290px;
+}
+#int3 {
+  bottom: 490px;
+  left: 691px;
+}
+#int4 {
+  bottom: 390px;
+  left: 840px;
+}
+#int5 {
+  bottom: 460px;
+  left: 967px;
+}
+#int6 {
+  bottom: 410px;
+  left: 1097px;
+}
+#int7 {
+  bottom: 410px;
+  left: 1247px;
+}
+#int8 {
+  bottom: 330px;
+  left: 1407px;
+}
+#int9 {
+  bottom: 508px;
+  left: 1497px;
+}
+#divImg1 {
+  bottom: 580px;
+  left: 310px;
+  transform: rotate(-10deg);
+}
+#divImg2 {
+  bottom: 420px;
+  left: 440px;
+  transform: rotate(-4deg);
+}
+#divImg3 {
+  bottom: 580px;
+  left: 600px;
+  transform: rotate(2deg);
+}
+#divImg4 {
+  bottom: 320px;
+  left: 790px;
+}
+#divImg5 {
+  bottom: 570px;
+  left: 820px;
+  z-index: 0;
+}
+#divImg6 {
+  bottom: 550px;
+  left: 1090px;
+}
+#divImg7 {
+  bottom: 530px;
+  left: 1170px;
+}
+#divImg8 {
+  bottom: 500px;
+  left: 1390px;
+  overflow: hidden;
+}
+#divImg9 {
+  bottom: 570px;
+  left: 1560px;
+}

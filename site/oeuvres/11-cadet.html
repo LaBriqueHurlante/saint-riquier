@@ -8,7 +8,21 @@
 
 <script src="../js/jquery-1.11.2.min.js"></script>
 <script src="../js/scroll.js"></script>
-
+<style>
+.popup-button {
+  color: #FFC88F;
+  font-size:40px;
+}
+#bouton1 {
+top: 685px;
+  left: 868px;
+  }
+#bouton2 {
+top: 609px;
+  left: 917px;
+  font-size: 45px;
+  }
+</style>
 
 </head>
 
@@ -32,9 +46,34 @@
 <a id="boutonHome" href="#section1"><img src="../css/img/nav/icone-home.png" /></a>
 <!-- FIN MENU -->
 
+		<!-- LE CONTENU DE LA POPUP 1 -->
+		<div class="modal blur-effect" id="popup1">
+			<div class="popup-content">
+				<h3>Cyborg</h3>
+				<div>
+					<p class="para">Dans les livres de science-fiction, un cyborg est un être humain composé de parties mécaniques.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+		<!-- LE CONTENU DE LA POPUP 2 -->
+		<div class="modal blur-effect" id="popup2">
+			<div class="popup-content">
+				<h3>Robot</h3>
+				<div>
+					<p class="para">Les robots sont des machines électroniques programmées pour effectuer certains gestes. Ils peuvent ressembler à un être humain, prendre une forme animale ou celle d’une machine.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+
 <section class="page">
 <section id="section1" class="section section1">
 	<img src="../css/img/cadet/Cadet.svg" />
+    <button id="bouton1" class="popup-button" data-modal="popup1">cyborg</button>
+    <button id="bouton2" class="popup-button" data-modal="popup2">robot</button>
 </section> <!--section premiere-->
 
 </section> <!--section principale-->

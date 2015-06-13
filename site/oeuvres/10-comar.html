@@ -8,7 +8,32 @@
 
 <script src="../js/jquery-1.11.2.min.js"></script>
 <script src="../js/scroll.js"></script>
-
+<style>
+.popup-button {
+  color: #8FD237;
+  font-size:55px;
+}
+#bouton1 {
+	top: 620px;
+  left: 1209px;
+  }
+#bouton2 {
+top: 1167px;
+  left: 733px;
+  }
+#bouton3 {
+top: 1245px;
+  left: 1138px;
+	}
+#popup3 {
+	  width: 100%;
+  max-width: 1700px;
+  }
+#popup4 {
+top: 1025px;
+  left: 598px;
+  }
+</style>
 
 </head>
 
@@ -32,9 +57,46 @@
 <a id="boutonHome" href="#section1"><img src="../css/img/nav/icone-home.png" /></a>
 <!-- FIN MENU -->
 
+		<!-- LE CONTENU DE LA POPUP 1 -->
+		<div class="modal blur-effect" id="popup1">
+			<div class="popup-content">
+				<h3>morphologie</h3>
+				<div>
+					<p class="para">C’est l’étude de la forme des corps des êtres vivants, hommes ou animaux.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+		<!-- LE CONTENU DE LA POPUP 2 -->
+		<div class="modal blur-effect" id="popup2">
+			<div class="popup-content">
+				<h3>omnivore</h3>
+				<div>
+					<p class="para">Les animaux omnivores ont besoin pour vivre de manger de la viande et des végétaux.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP --> 
+		<!-- LE CONTENU DE LA POPUP 3 -->
+		<div class="modal blur-effect" id="popup3">
+			<div class="popup-content">
+				<h3>sur le vif</h3>
+				<div>
+					<p class="para">c’est quand l’artiste dessine ou peint des modèles vivants.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+
 <section class="page">
 <section id="section1" class="section section1">
 	<img src="../css/img/comar/Comar.svg" />
+    <button id="bouton1" class="popup-button" data-modal="popup1">morphologie</button>
+    <button id="bouton2" class="popup-button" data-modal="popup2">omnivores</button>
+    <button id="bouton3" class="popup-button" data-modal="popup3">sur le vif</button>
 </section> <!--section premiere-->
 
 </section> <!--section principale-->
