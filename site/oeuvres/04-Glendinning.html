@@ -2,74 +2,170 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Patchwork</title>
+<title>titre</title>
 <link href="../css/Style.css" rel="stylesheet" type="text/css">
 <link href="../css/popup.css" rel="stylesheet" type="text/css">
 <style>
-	body {background:#e4191c;}
-
-#content {
-
-  text-align: center;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
+	body {overflow:hidden;}
+	.page {width:4188px;height:1536px;}
+	.section1, .section2 {display:inline-block;float:left;overflow:visible;}
+	.section2 {width:2140px;}
+	#enfant {
+	  position: absolute;
+  	right: 0;
+ 	 top: 0;
+	 z-index:0;	
 }
-	#cardSlots {
-width: 1460px;
-  text-align: center;
-  margin-right: 130px;
-  margin-left: auto;
-  margin-top: 130px;
-  clear: both;
-  box-sizing: border-box;
-  }
-#cardSlots .slot-carre{background:#DFE0D8;}
-  #cardSlots div.hovered {
-  background: #fff;
+.enf_plumes {
+	  position: absolute;
+  	right: 0;
+ 	 top: 0;
+	 z-index:2;
+	   width: 100px;
+  height: 100px;
+  /*background-color: rgba(95, 158, 160, 0.5);*/
 }
-#cardPile {
-width: 410px;
+a.random {
   position: absolute;
-  clear: both;
-  box-sizing: border-box;
-  top: 100px;
-  left: 30px;
-	}
-#cardPile div {
-width: 130px;
-  height: 130px;
-  float: left;
-  margin: 2px;
-	}
-#cardSlots div:first-child, #cardPile div:first-child {
-  margin-left: 0;
-}
-#cardPile img.ui-draggable-dragging {
-	
-	width:213px;
-	height:213px;
-	
-  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
-  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
-  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
-}
-#cardPile img.correct {
-	width:213px;
-	height:213px;
-	background-color: #E4191C;
-	}
-#content img {
-  width: 100%;
-  height: auto;
-  position: absolute;
+  z-index: 3;
   top: 0;
-  left: 0;
+  right: 0;
 }
-
+.enf_plumes img {top:0px;right:0px;}
+#enfant1 {
+	top: 340px;
+  right: 910px;
+}
+#enfant2 {
+  top: 440px;
+  right: 910px;
+}
+#enfant3 {
+  top: 540px;
+  right: 870px;
+}
+#enfant4 {
+  top: 910px;
+  right: 660px;
+  height: 200px;
+}
+#enfant5 {
+  top: 870px;
+  right: 560px;
+}
+#enfant6 {
+  top: 970px;
+  right: 460px;
+}
+#enfant7 {
+  top: 360px;
+  right: 790px;
+}
+#enfant8 {
+  top: 610px;
+  right: 1700px;
+}
+#enfant9 {
+  top: 1040px;
+  right: 570px;
+}
+#enfant10 {
+  top: 510px;
+  right: 570px;
+}
+#enfant11 {
+  top: 640px;
+  right: 550px;
+  height: 220px;
+}
+#enfant12 {
+  top: 530px;
+  right: 1290px;
+}
+#enfant13 {
+  top: 630px;
+  right: 1330px;
+}
+#enfant14 {
+  top: 800px;
+  right: 1640px;
+}
+#enfant15 {
+  top: 810px;
+  right: 1220px;
+}
+#enfant16 {
+  top: 410px;
+  right: 680px;
+}
+#enfant17 {
+  top: 620px;
+  right: 800px;
+}
+#enfant18 {
+  top: 710px;
+  right: 820px;
+}
+#enfant19 {
+  top: 740px;
+  right: 1400px;
+}
+#enfant20 {
+  top: 860px;
+  right: 360px;
+}
+#enfant21 {
+  top: 560px;
+  right: 1460px;
+}
+#enfant22 {
+  top: 660px;
+  right: 1500px;
+}
+#enfant23 {
+  top: 840px;
+  right: 1530px;
+}
+#enfant24 {
+  top: 640px;
+  right: 700px;
+}
+#enfant25 {
+  top: 520px;
+  right: 700px;
+}
+#enfant26 {
+  top: 810px;
+  right: 720px;
+}
+#enfant27 {
+  top: 750px;
+  right: 620px;
+}
+#enfant28 {
+  top: 510px;
+  right: 210px;
+  height: 300px;
+  width: 200px;
+}
+#enfant29 {
+  top: 840px;
+  right: 1420px;
+}
+#enfant30 {
+  top: 810px;
+  right: 990px;
+}
+#enfant31 {
+  top: 700px;
+  right: 1000px;
+}
+#enfant32 {
+  top: 600px;
+  right: 1000px;
+}
 </style>
 <script src="../js/jquery-1.11.2.min.js"></script>
-<script src="../js/jquery-ui.min.js"></script>
 <script src="../js/scroll.js"></script>
 
 
@@ -97,29 +193,22 @@ width: 130px;
 
 <section class="page">
 <section id="section1" class="section section1">
-
-
-
+	<img src="../css/img/glendinning/Glendinning-titre.svg" />
 </section> <!--section premiere-->
 <section id="section2" class="section section2">
 
-<div id="content">
-<div id="cardPile"> </div>
-<div id="cardSlots"> </div>
-</div>
+<img id="enfant" src="../css/img/glendinning/calques/fond-corps.png" />
+
 
 </section> <!--section secondaire-->
 </section> <!--section principale-->
 
 <div class="overlay"></div><!-- La div overlay -->
 
-
-
-
-
 		<script src="../js/popup.js"></script>
         <script src="../js/jquery.foggy.min.js"></script>
         <script src="../js/menu.js"></script>
-        <script src="../js/arche.js"></script>
+        <script src="../js/enfant.js"></script>
+
 </body>
 </html>

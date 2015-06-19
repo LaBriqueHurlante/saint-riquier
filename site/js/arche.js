@@ -22,7 +22,7 @@ $(document).ready(function() {
 
   
   for ( var i=1; i<=30; i++ ) {
-    $('<div>' + '</div>').data( 'number', i ).appendTo( '#cardSlots' ).droppable( {
+    $('<div class="slot-carre">' + '</div>').data( 'number', i ).appendTo( '#cardSlots' ).droppable( {
       accept: '#cardPile img',
       hoverClass: 'hovered',
 	  drop: handleCardDrop
@@ -32,7 +32,6 @@ $(document).ready(function() {
 		'display': 'inline-block',
 		'width': '213px',
 		'height': '213px',
-		'background': '#dfe0d8',
 		'margin': '15px'
 		});
   }
