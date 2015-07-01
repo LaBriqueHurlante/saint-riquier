@@ -2,41 +2,10 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Venus à gonds</title>
+<title>titre</title>
 <link href="../css/Style.css" rel="stylesheet" type="text/css">
 <link href="../css/popup.css" rel="stylesheet" type="text/css">
-<style>
-	.statue {position:absolute; top:0px;left:0px;}
-	#venus2 {
-		opacity:0;
-	 -webkit-animation: statue 5s linear infinite alternate;
-  -moz-animation: statue 1.5s linear infinite alternate;
-  animation: statue 5s linear infinite alternate;
-	
-		}
-	
-	@-webkit-keyframes statue {
-  from {
-    opacity:0;
-  }
-  45% {opacity:0;}
-  55% {opacity:1;}
-  
 
-  to {
-    opacity:1;
-  }
-}
-#bouton1 {
-top: 734px;
-  left: 1312px;
-  position: absolute;
-  color: rgb(52, 178, 52);
-  font-family: source;
-  font-size: 38px;
-  font-weight: normal;
-  }
-</style>
 <script src="../js/jquery-1.11.2.min.js"></script>
 <script src="../js/scroll.js"></script>
 
@@ -44,18 +13,7 @@ top: 734px;
 </head>
 
 <body>
-		<!-- LE CONTENU DE LA POPUP 1 -->
-		<div class="modal blur-effect" id="popup">
-			<div class="popup-content">
-				<h3>déesse</h3>
-				<div>
-					<p class="para">Une déesse est une divinité féminine. Une divinité est un être adoré par les hommes.</p>
-					<div class="close"></div>
-				</div>
-			</div>
-		</div>
-		<!-- FIN DE LA POPUP -->
-        
+
 <!-- MENU -->
 <button id="boutonMenu" onClick="fonctionTest()"><img src="../css/img/nav/icone-menu.png" /></button>
 <div id="nav" class="ferme">
@@ -82,16 +40,8 @@ top: 734px;
  <!-- FIN MENU -->
 
 <section class="page">
-<section id="section1" class="section section1">
-
-	<img src="../css/img/venus/arman-fond.svg" />
-    <img id="venus1" class="statue" src="../css/img/venus/fermee.svg" />
-    <img id="venus2" class="statue" src="../css/img/venus/ouverte.svg" />
-    <button id="bouton1" class="popup-button" data-modal="popup">déesse</button>
-    
-
-</section> <!--section premiere-->
-
+<section id="section1" class="section section1"></section> <!--section premiere-->
+<section id="section2" class="section section2"></section> <!--section secondaire-->
 </section> <!--section principale-->
 
 <div class="overlay"></div><!-- La div overlay -->

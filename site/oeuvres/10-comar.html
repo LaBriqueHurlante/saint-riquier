@@ -25,13 +25,14 @@ top: 1167px;
 top: 1245px;
   left: 1138px;
 	}
+#bouton4 {
+  top: 113px;
+  left: 420px;
+  font-style: italic;
+}
 #popup3 {
 	  width: 100%;
   max-width: 1700px;
-  }
-#popup4 {
-top: 1025px;
-  left: 598px;
   }
 </style>
 
@@ -41,21 +42,28 @@ top: 1025px;
 
 <!-- MENU -->
 <button id="boutonMenu" onClick="fonctionTest()"><img src="../css/img/nav/icone-menu.png" /></button>
-<div id="nav" class="ferme"><ul style="list-style:none;">
-	<li style="font-size:60px;margin:15px; padding:15px;"><a href="01-plumes.html">01-plumes</a></li>
-    <li style="font-size:60px;margin:15px; padding:15px;"><a href="02-chiensbleus.html">02-chiensbleus</a></li>
-    <li style="font-size:60px;margin:15px; padding:15px;"><a href="03-pan.html">03-pan</a></li>
-    <li style="font-size:60px;margin:15px; padding:15px;"><a href="04.html">04</a></li>
-    <li style="font-size:60px;margin:15px; padding:15px;"><a href="05-plante.html">05-plante</a></li>
-    <li style="font-size:60px;margin:15px; padding:15px;"><a href="06-patchwork.html">06-patchwork</a></li>
-    <li style="font-size:60px;margin:15px; padding:15px;"><a href="07-venus.html">07-venus</a></li>
-    <li style="font-size:60px;margin:15px; padding:15px;"><a href="08-petrovitch.html">08-petrovitch</a></li>
-    <li style="font-size:60px;margin:15px; padding:15px;"><a href="09-balpe.html">09-balpe</a></li>
-    <li style="font-size:60px;margin:15px; padding:15px;"><a href="10-comar.html">10-comar</a></li>
-    <li style="font-size:60px;margin:15px; padding:15px;"><a href="11-cadet.html">11-cadet</a></li>
-</ul></div>
+<div id="nav" class="ferme">
+<img src="../css/img/plan_musee.png" usemap="#map" />
+<map name="map">
+  <area id="nav_oeuvre1" shape="circle" href="08-petrovitch.html" alt="Françoise Pétrovitch, Vanité" />
+  <area id="nav_oeuvre2" shape="circle" href="07-venus.html" alt="Arman, Vénus à gonds" />
+  <area id="nav_oeuvre3" shape="circle" href="05-plante.html" alt="Gilles Aillaud, Bassin et plante verte" />
+  <area id="nav_oeuvre4" shape="circle" href="13-waked.html" alt="Sharif Waked, Bath Time/ L’heure du bain" />
+  <area id="nav_oeuvre5" shape="circle" href="11-cadet.html" alt="France Cadet" />
+  <area id="nav_oeuvre6" shape="circle" href="12-vernhes.html" alt="Eric Vernhes, Gerridae" />
+  <area id="nav_oeuvre7" shape="circle" href="02-chiensbleus.html" alt="Henri Cueco, Les chiens bleus de Saqqarah" />
+  <area id="nav_oeuvre8" shape="circle" href="10-comar.html" alt="Philippe Comar, Quatre pachydermes" />
+  <area id="nav_oeuvre9" shape="circle" href="06-patchwork.html" alt="Ilias Poulos, Arche virtuelle" />
+  <area id="nav_oeuvre10" shape="circle" href="09-balpe.html" alt="JP Balpe, Monstrueux monstres" />
+  <area id="nav_oeuvre11" shape="circle" href="01-plumes.html" alt="Isa Barbier, Chevelure de Bérénice" />
+  <area id="nav_oeuvre12" shape="circle" href="14-huot.html" alt="Benoît Huot, Personnage assis avec renard" />
+  <area id="nav_oeuvre13" shape="circle" href="09-balpe.html" alt="JP Balpe, l'Esprit Humain" />
+  <area id="nav_oeuvre14" shape="circle" href="03-pan.html" alt="Patrick Chambon, Pan" />
+  <area id="nav_oeuvre15" shape="circle" href="04-Glendinning.html" alt="Lucy Glendinning, Featherchild 4" />
+</map>
+</div>
 <a id="boutonHome" href="#section1"><img src="../css/img/nav/icone-home.png" /></a>
-<!-- FIN MENU -->
+ <!-- FIN MENU -->
 
 		<!-- LE CONTENU DE LA POPUP 1 -->
 		<div class="modal blur-effect" id="popup1">
@@ -90,6 +98,17 @@ top: 1025px;
 			</div>
 		</div>
 		<!-- FIN DE LA POPUP -->
+        <!-- LE CONTENU DE LA POPUP 4 -->
+		<div class="modal blur-effect" id="popup4">
+			<div class="popup-content">
+				<h3>Pachyderme</h3>
+				<div>
+					<p class="para">Désigne des mammifères qui ont la peau épaisse et deux défenses en ivoire, comme les éléphants, les rhinocéros et les hippopotames.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
 
 <section class="page">
 <section id="section1" class="section section1">
@@ -97,6 +116,7 @@ top: 1025px;
     <button id="bouton1" class="popup-button" data-modal="popup1">morphologie</button>
     <button id="bouton2" class="popup-button" data-modal="popup2">omnivores</button>
     <button id="bouton3" class="popup-button" data-modal="popup3">sur le vif</button>
+    <button id="bouton4" class="popup-button" data-modal="popup4">pachydermes</button>
 </section> <!--section premiere-->
 
 </section> <!--section principale-->
