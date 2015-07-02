@@ -68,7 +68,23 @@ width: 130px;
   top: 0;
   left: 0;
 }
-
+#bouton1 {
+  top: 902px;
+  left: 345px;
+  position: absolute;
+  color: #68C6B4;
+  font-family: source;
+  font-size: 48px;
+  transform: rotate(2deg);
+}
+#bouton2 {
+  top: 766px;
+  left: 1356px;
+  position: absolute;
+  color: #68C6B4;
+  font-family: source;
+  font-size: 43px;
+}
 </style>
 <script src="../js/jquery-1.11.2.min.js"></script>
 <script src="../js/jquery-ui.min.js"></script>
@@ -78,6 +94,29 @@ width: 130px;
 </head>
 
 <body>
+		<!-- LE CONTENU DE LA POPUP 1 -->
+		<div class="modal blur-effect" id="popup1">
+			<div class="popup-content">
+				<h3>plasticien</h3>
+				<div>
+					<p class="para">Se dit d’un artiste qui utilise toutes les techniques (dessin, peinture, installation, vidéo, photographie).</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+        		<!-- LE CONTENU DE LA POPUP 2-->
+		<div class="modal blur-effect" id="popup2">
+			<div class="popup-content">
+				<h3>tribu</h3>
+				<div>
+					<p class="para">groupe de familles vivant dans une même région.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+
 
 <!-- MENU -->
 <button id="boutonMenu" onClick="fonctionTest()"><img src="../css/img/nav/icone-menu.png" /></button>
@@ -93,7 +132,7 @@ width: 130px;
   <area id="nav_oeuvre7" shape="circle" href="02-chiensbleus.html" alt="Henri Cueco, Les chiens bleus de Saqqarah" />
   <area id="nav_oeuvre8" shape="circle" href="10-comar.html" alt="Philippe Comar, Quatre pachydermes" />
   <area id="nav_oeuvre9" shape="circle" href="06-patchwork.html" alt="Ilias Poulos, Arche virtuelle" />
-  <area id="nav_oeuvre10" shape="circle" href="09-balpe.html" alt="JP Balpe, Monstrueux monstres" />
+  <area id="nav_oeuvre10" shape="circle" href="15-monstres.html" alt="JP Balpe, Monstrueux monstres" />
   <area id="nav_oeuvre11" shape="circle" href="01-plumes.html" alt="Isa Barbier, Chevelure de Bérénice" />
   <area id="nav_oeuvre12" shape="circle" href="14-huot.html" alt="Benoît Huot, Personnage assis avec renard" />
   <area id="nav_oeuvre13" shape="circle" href="09-balpe.html" alt="JP Balpe, l'Esprit Humain" />
@@ -101,13 +140,15 @@ width: 130px;
   <area id="nav_oeuvre15" shape="circle" href="04-Glendinning.html" alt="Lucy Glendinning, Featherchild 4" />
 </map>
 </div>
-<a id="boutonHome" href="#section1"><img src="../css/img/nav/icone-home.png" /></a>
+<a id="boutonHome" href="../intro.html"><img src="../css/img/nav/icone-home.png" /></a>
  <!-- FIN MENU -->
 
 <section class="page">
 <section id="section1" class="section section1">
 
-<img src="../css/img/patchwork/arche-ecran1bis.svg" />
+<img src="../css/img/patchwork/arche-ecran1bis.png" />
+<button id="bouton1" class="popup-button" data-modal="popup1">plasticien</button>
+<button id="bouton2" class="popup-button" data-modal="popup2">tribus</button>
 
 </section> <!--section premiere-->
 <section id="section2" class="section section2">
