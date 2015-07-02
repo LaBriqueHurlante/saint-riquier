@@ -123,7 +123,14 @@ z-index:100;
   padding: 10px;
   z-index: 100;
 }
-
+#boutonFermer {
+  position: fixed;
+  right: 55px;
+  top: 226px;
+  padding: 0;
+  z-index: 100;
+  margin: 0;
+}
 #nav h1 {display:none;}
 #nav img {
   width: 2048px;
