@@ -44,7 +44,9 @@ $('.enf_plumes').click(function() {
 			  event.preventDefault();
 			  });
           $("a.random").attr("href", path).delay(1000).fadeIn("slow",function(){
-			  $(this).delay(2000).fadeOut('slow');
+			  $(this).delay(1000).fadeOut('slow',function(){
+				  $(this).remove();
+				  });
 			  });
         }
       }
