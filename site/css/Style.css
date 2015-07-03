@@ -232,6 +232,15 @@ area#nav_oeuvre1 {
 .titre {height:1536px;}
 .page {
   overflow: hidden;
+  width:2031px;
+  height:3072px;
+  box-sizing:border-box;
+}
+.page2 {
+  overflow: hidden;
+  width: 2048px;
+  height:1536px;
+  box-sizing:border-box;
 }
 
 /*PAN*/
