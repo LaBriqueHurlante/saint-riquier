@@ -8,11 +8,33 @@
 
 <script src="../js/jquery-1.11.2.min.js"></script>
 <script src="../js/scroll.js"></script>
-
+<style>
+#bouton1 {
+  top: 454px;
+  left: 1571px;
+  position: absolute;
+  color: #87121F;
+  font-family: source;
+  font-size: 48px;
+}
+</style>
 
 </head>
 
 <body>
+	
+    <!-- LE CONTENU DE LA POPUP 1 -->
+		<div class="modal blur-effect" id="popup1">
+			<div class="popup-content">
+				<h3>naturalisé</h3>
+				<div>
+					<p class="para">se dit d’un animal que l’on garde figé après sa mort comme une sculpture. Pour créer un animal naturalisé, on récupère la peau de l’animal mort, puis on la tend sur une sculpture en métal, en bois et en polystyrène. On utilise des billes en cristal pour les yeux et du carton pour les oreilles.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+
 
 <!-- MENU -->
 <button id="boutonMenu" onClick="fonctionTest()"><img src="../css/img/nav/icone-menu.png" /></button>
@@ -41,10 +63,9 @@
 
 <section class="page">
 <section id="section1" class="section section1">
-<br />
-<br />
-<br />
-<h1>Chuuut... cécile dessine.</h1>
+
+<img src="../css/img/huot/huot2.png" />
+<button id="bouton1" class="popup-button" data-modal="popup1">naturalisés</button>
 
 </section> <!--section premiere-->
 <section id="section2" class="section section2"></section> <!--section secondaire-->

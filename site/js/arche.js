@@ -11,7 +11,7 @@ $(document).ready(function() {
       cursor: '-webkit-grab',
       revert: false
     } )
-	$('<img src="../css/img/patchwork/' + numbers[i]+ '.svg" />').appendTo( '#card'+numbers[i] ).draggable( {
+	$('<img src="../css/img/patchwork/' + numbers[i]+ '.png" />').appendTo( '#card'+numbers[i] ).draggable( {
       containment: '.section2',
       stack: '#cardPile img',
       cursor: '-webkit-grab',
