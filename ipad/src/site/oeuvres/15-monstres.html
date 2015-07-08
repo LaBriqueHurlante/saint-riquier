@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>titre</title>
+<link href="../css/Style.css" rel="stylesheet" type="text/css">
+<link href="../css/popup.css" rel="stylesheet" type="text/css">
+<style>
+#bouton1 {
+  top: 749px;
+  left: 1768px;
+  position: absolute;
+  color: #A10B16;
+  font-family: source;
+  font-size: 48px;
+  transform: rotate(1deg);
+}
+</style>
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/scroll.js"></script>
+
+
+</head>
+
+<body>
+		<!-- LE CONTENU DE LA POPUP 1 -->
+		<div class="modal blur-effect" id="popup1">
+			<div class="popup-content">
+				<h3>Chimère</h3>
+				<div>
+					<p class="para">Désigne quelque chose d’imaginaire qui est constitué d’un mélange de plusieurs animaux.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+
+
+<!-- MENU -->
+<a id="boutonMenu" href="../plan.html" ><img src="../css/img/nav/icone-menu.png" /></a>
+<a id="boutonHome" href="../intro.html"><img src="../css/img/nav/icone-home.png" /></a>
+ <!-- FIN MENU -->
+
+<section class="page2">
+<section id="section1" class="section section1">
+	<img src="../css/img/monstres/monstrueux-monstres.png" />
+    <button id="bouton1" class="popup-button" data-modal="popup1">chimère</button>
+</section> <!--section premiere-->
+</section> <!--section principale-->
+
+<div class="overlay"></div><!-- La div overlay -->
+
+		<script src="../js/popup.js"></script>
+        <script src="../js/jquery.foggy.min.js"></script>
+        <script src="../js/menu.js"></script>
+</body>
+</html>

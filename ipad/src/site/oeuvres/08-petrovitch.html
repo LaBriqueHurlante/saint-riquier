@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Petrovitch</title>
+<link href="../css/Style.css" rel="stylesheet" type="text/css">
+<link href="../css/animate.min.css" rel="stylesheet" type="text/css">
+<link href="../css/popup.css" rel="stylesheet" type="text/css">
+<style>
+.section2 {background:url(../css/img/petrovitch/fond-jeu.png) no-repeat;}
+.popup-button {
+color: #00052D;
+  position: absolute;
+  font-family: Josefin;
+  font-size: 50px;
+  }
+#bouton1 {
+	top: 482px;
+  left: 541px;
+  font-style: italic;
+  font-size: 60px;
+  }
+#bouton2 {
+	top: 947px;
+  left: 650px;
+  }
+#bouton3 {
+top: 1025px;
+  left: 598px;	
+	}
+#popup3 {
+	  width: 100%;
+  max-width: 1700px;
+  }
+#img0 {
+	position: absolute;
+  bottom: 0;
+ left: 400px;
+ z-index:2; 
+  }
+img.popup-oiseau {
+  right: 290px;
+}
+#chouette {
+  left: 30px;
+  position: absolute;
+  width: 220px;
+  top: 1220px;
+}
+.image-animal {
+	position: absolute;
+  bottom: 0px;
+  left: 0px;
+  }
+ .animal {}
+ .animal2 {}
+</style>
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/scroll.js"></script>
+
+
+</head>
+
+<body>
+	<!-- MENU -->
+	<a id="boutonMenu" href="../plan.html" ><img src="../css/img/nav/icone-menu.png" /></a>
+	<a id="boutonHome" href="../intro.html"><img src="../css/img/nav/icone-home.png" /></a>
+	 <!-- FIN MENU -->
+
+		<!-- LE CONTENU DE LA POPUP oiseau -->
+		<div class="modal blur-effect" id="oiseau">
+			<div class="popup-content">
+				<div>
+					<img class="para" src="../css/img/nav/bulle-petro.png" />
+                    <img class="popup-oiseau" src="../css/img/nav/chouettegche.png" />
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP --> 
+		<!-- LE CONTENU DE LA POPUP 1 -->
+		<div class="modal blur-effect" id="popup1">
+			<div class="popup-content">
+				<h3>Vanité</h3>
+				<div>
+					<p class="para">En peinture, une vanité est un tableau qui montre, par des objets et des détails, le temps qui passe : fleur fanée, fruit moisi.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+        		<!-- LE CONTENU DE LA POPUP 2 -->
+		<div class="modal blur-effect" id="popup2">
+			<div class="popup-content">
+				<h3>siamois</h3>
+				<div>
+					<p class="para">Les enfants siamois sont des jumeaux nés attachés l’un à l’autre. La médecine peut souvent les séparer après leur naissance.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+        		<!-- LE CONTENU DE LA POPUP 3 -->
+		<div class="modal blur-effect" id="popup3">
+			<div class="popup-content">
+				<h3>couleurs</h3>
+				<div>
+					<p class="para">Les trois couleurs primaires sont le rouge, le bleu et le jaune. C’est à partir de ces trois couleurs que l’on peut obtenir toutes les autres. Il existe des couleurs froides, comme le bleu, le vert et le violet, et d’autres chaudes, comme le jaune, l’orange, le rouge et le rose.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+
+
+<section class="page">
+<section id="section1" class="section section1">
+	<img src="../css/img/petrovitch/petro-ecran1.jpg" />
+    <button id="bouton1" class="popup-button" data-modal="popup1">Vanité.</button>
+    <button id="bouton2" class="popup-button" data-modal="popup2">siamois</button>
+    <button id="bouton3" class="popup-button" data-modal="popup3">couleurs</button>
+</section> <!--section premiere-->
+<section id="section2" class="section section2">
+
+<button id="bouton-oiseau" class="popup-button" data-modal="oiseau"><img id="chouette" src="../css/img/nav/chouettedte.png" /></button>
+
+	<img id="img0" src="../css/img/petrovitch/gens2.png" />
+    
+    <div id="int1" class="carre-interaction"></div>
+    <div id="int2" class="carre-interaction"></div>
+ 	<div id="int3" class="carre-interaction"></div>
+    <div id="int4" class="carre-interaction"></div>
+    <div id="int5" class="carre-interaction"></div>
+    <div id="int6" class="carre-interaction"></div>
+    <div id="int7" class="carre-interaction"></div>
+    <div id="int8" class="carre-interaction"></div>
+    <div id="int9" class="carre-interaction"></div>
+    
+    
+    
+    
+    <div id="divImg1" class="contenant-interaction" style="position:absolute !important">   			
+        	<div class="image-animal"><img class="animal" id="img1"  src="../css/img/petrovitch/dauphin.png" /></div>
+	</div>
+    
+    <div id="divImg2" class="contenant-interaction" style="position:absolute !important">                       
+            <div class="image-animal"><img class="animal" id="img2"  src="../css/img/petrovitch/papillon.png" /></div>
+	</div>
+    
+    <div id="divImg3" class="contenant-interaction" style="position:absolute !important">                       
+            <div class="image-animal"><img class="animal" id="img3"  src="../css/img/petrovitch/lezard.png" /></div>
+ 	</div>
+    
+    <div id="divImg4" class="contenant-interaction" style="position:absolute !important">                      
+            <div class="image-animal"><img class="animal" id="img4"  src="../css/img/petrovitch/ecureuil.png" /></div>
+	</div>
+    
+    <div id="divImg5" class="contenant-interaction" style="position:absolute !important">                       
+            <div class="image-animal"><img class="animal" id="img5"  src="../css/img/petrovitch/cheval.png" /></div>
+	</div>
+    
+    <div id="divImg6" class="contenant-interaction" style="position:absolute !important">                       
+            <div class="image-animal"><img class="animal" id="img6"  src="../css/img/petrovitch/manchot.png" /></div>
+	</div>
+    
+    <div id="divImg7" class="contenant-interaction" style="position:absolute !important">                       
+            <div class="image-animal"><img class="animal" id="img7"  src="../css/img/petrovitch/oiseau.png" /></div>
+	</div>
+    
+    <div id="divImg8" class="contenant-interaction" style="position:absolute !important">                       
+            <div class="image-animal"><img class="animal" id="img8"  src="../css/img/petrovitch/chat.png" /></div>
+ 	</div>
+    
+    <div id="divImg9" class="contenant-interaction" style="position:absolute !important">                      
+            <div class="image-animal"><img class="animal" id="img9"  src="../css/img/petrovitch/chien.png" /></div>        
+    </div>
+
+		
+    
+</section> <!--section secondaire-->
+</section> <!--section principale-->
+
+<div class="overlay"></div><!-- La div overlay -->
+
+		<script src="../js/popup.js"></script>
+        <script src="../js/jquery.foggy.min.js"></script>
+        <script src="../js/menu.js"></script>
+        <script src="../js/petrovitch.js"></script>
+</body>
+</html>
+

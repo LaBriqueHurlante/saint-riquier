@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Balpe</title>
+<link href="../css/Style.css" rel="stylesheet" type="text/css">
+<link href="../css/popup.css" rel="stylesheet" type="text/css">
+<style>
+	.statue {position:absolute; top:0px;left:0px;}
+	#venus2 {
+		opacity:0;
+	 -webkit-animation: statue 1.5s 5s 5s ease-in-out infinite alternate;
+  -moz-animation: statue 1.5s ease-in-out infinite alternate;
+  animation: statue 15s ease-in-out infinite alternate;
+	
+		}
+	
+	@-webkit-keyframes statue {
+
+  from {
+    opacity:1;
+  }
+  45% {opacity:1;}
+  55% {opacity:0;}
+  
+
+  to {
+    opacity:0;
+  }
+}
+
+</style>
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/scroll.js"></script>
+
+
+</head>
+
+<body>
+
+<!-- MENU -->
+<a id="boutonMenu" href="../plan.html" ><img src="../css/img/nav/icone-menu.png" /></a>
+<a id="boutonHome" href="../intro.html"><img src="../css/img/nav/icone-home.png" /></a>
+ <!-- FIN MENU -->
+ 
+ 
+<section class="page2">
+<section id="section1" class="section section1">
+
+
+    <img id="venus1" class="statue" src="../css/img/balpe/esprithumain-ouvert.png" />
+    <img id="venus2" class="statue" src="../css/img/balpe/esprithumain-ferme.png" />
+
+    
+
+</section> <!--section premiere-->
+
+</section> <!--section principale-->
+
+<div class="overlay"></div><!-- La div overlay -->
+
+		<script src="../js/popup.js"></script>
+        <script src="../js/jquery.foggy.min.js"></script>
+        <script src="../js/menu.js"></script>
+</body>
+</html>

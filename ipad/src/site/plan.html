@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>plan</title>
+<link href="css/Style.css" rel="stylesheet" type="text/css">
+<link href="css/popup.css" rel="stylesheet" type="text/css">
+<style>
+#bouton1 {
+  top: 507px;
+  left: 581px;
+  font-size: 40px;
+  color: #78181C;
+  font-family: source;
+}
+#intro_but_info {
+  position: absolute;
+  width: 650px;
+  height: 300px;
+  top: 1140px;
+  left: 680px;
+}
+#accueil_consigne {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+
+</style>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/scroll.js"></script>
+</head>
+
+<body>
+
+
+
+<img src="css/img/plan_musee.png" usemap="#map" />
+
+<map name="map">
+  <area coords="361,684,50" shape="circle" href="oeuvres/01-plumes.html" alt="Isa Barbier, Chevelure de Bérénice" />
+  <area coords="609,814,50" shape="circle" href="oeuvres/02-chiensbleus.html" alt="Henri Cueco, Les chiens bleus de Saqqarah" />
+  <area coords="1226,697,50" shape="circle" href="oeuvres/07-venus.html" alt="Arman, Vénus à gonds" />
+  <area coords="1205,551,50" shape="circle" href="oeuvres/08-petrovitch.html" alt="Françoise Pétrovitch, Vanité" />
+  <area coords="766,787,50" shape="circle" href="oeuvres/05-plante.html" alt="Gilles Aillaud, Bassin et plante verte" />
+  <area coords="1033,150,50" shape="circle" href="oeuvres/13-waked.html" alt="Sharif Waked, Bath Time/ L’heure du bain" />
+  <area coords="672,326,50" shape="circle" href="oeuvres/11-cadet.html" alt="France Cadet" />
+  <area coords="946,263,50" shape="circle" href="oeuvres/12-vernhes.html" alt="Eric Vernhes, Gerridae" />
+  <area coords="1470,630,50" shape="circle" href="oeuvres/10-comar.html" alt="Philippe Comar, Quatre pachydermes" />
+  <area coords="648,487,50" shape="circle" href="oeuvres/06-patchwork.html" alt="Ilias Poulos, Arche virtuelle" />
+  <area coords="512,1016,50" shape="circle" href="oeuvres/15-monstres.html" alt="JP Balpe, Monstrueux monstres" />
+  <area coords="1263,253,50" shape="circle" href="oeuvres/14-huot.html" alt="Benoît Huot, Personnage assis avec renard" />
+  <area coords="1231,410,50" shape="circle" href="oeuvres/09-balpe.html" alt="JP Balpe, l'Esprit Humain" />
+  <area coords="564,677,50" shape="circle" href="oeuvres/03-pan.html" alt="Patrick Chambon, Pan" />
+  <area coords="338,577,50" shape="circle" href="oeuvres/04-Glendinning.html" alt="Lucy Glendinning, Featherchild 4" />
+</map>
+
+<a id="boutonHome" href="intro.html"><img src="css/img/nav/icone-home.png" /></a>
+
+<script src="js/popup.js"></script>
+<script src="js/jquery.foggy.min.js"></script>
+<script src="js/menu.js"></script>
+<script>
+	function introInfoOuvre(){
+		$("#accueil_consigne").fadeIn();
+		}
+	function introInfoFerme(){
+		$("#accueil_consigne").fadeOut();
+		}
+</script>
+</body>
+</html>

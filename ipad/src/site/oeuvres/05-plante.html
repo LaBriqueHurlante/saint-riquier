@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>plante verte</title>
+<link href="../css/Style.css" rel="stylesheet" type="text/css">
+<link href="../css/popup.css" rel="stylesheet" type="text/css">
+<style>
+	body {overflow:hidden;}
+	.page {width:4188px;height:1536px;}
+	.section1, .section2 {display:inline-block;float:left;overflow:visible;}
+	.section2 {width:2140px;}
+	.section1 {z-index:10;}
+	.ul-svg {}
+	.ul-svg li {
+		position:absolute;
+		z-index:1;	
+		}
+#bouton1 {
+	top: 481px;
+  left: 754px;
+  position: absolute;
+  color: red;
+  font-family: source;
+  font-size: 50px;
+  }
+img.popup-oiseau {
+  left: -120px;
+}
+#chouette {
+  left: 110px;
+  position: absolute;
+  width: 170px;
+  top: 1310px;
+}
+#oiseau .popup-oiseau {
+  position: absolute;
+  bottom: -184px;
+  width: 300px;
+}
+
+</style>
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/jquery.ui.touch-punch.min.js"></script>
+<script src="../js/plante.js"></script>
+<script src="../js/scroll.js"></script>
+
+
+
+</head>
+
+<body>
+
+		<!-- LE CONTENU DE LA POPUP 1 -->
+		<div class="modal blur-effect" id="popup1">
+			<div class="popup-content">
+				<h3>figuratif</h3>
+				<div>
+					<p class="para">L'art figuratif représente les objets, les êtres humains de manière à ce qu'on les reconnaisse facilement.<br /> 
+                    Le contraire de figuratif, c'est l'abstrait.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+        
+        <!-- LE CONTENU DE LA POPUP oiseau -->
+		<div class="modal blur-effect" id="oiseau">
+			<div class="popup-content">
+				<div>
+					<img class="para" src="../css/img/nav/bulle-aillaud.png" />
+                    <img class="popup-oiseau" src="../css/img/nav/chouettedte.png" />
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+
+
+
+<!-- MENU -->
+<a id="boutonMenu" href="../plan.html" ><img src="../css/img/nav/icone-menu.png" /></a>
+<a id="boutonHome" href="../intro.html"><img src="../css/img/nav/icone-home.png" /></a>
+ <!-- FIN MENU -->
+
+<section class="page">
+<section id="section1" class="section section1">
+
+	<img src="../css/img/aillaud/aillaud-ptitre.png" />
+    <button id="bouton1" class="popup-button" data-modal="popup1">figuratif</button>
+
+</section> <!--section premiere-->
+<section id="section2" class="section section2">
+
+<button id="bouton-oiseau" class="popup-button" data-modal="oiseau"><img id="chouette" src="../css/img/nav/chouettedte.png" /></button>
+
+<ul class="ul-svg">
+
+<li style="left: 110px; top: 469px;" ><img src="../css/img/aillaud/svg/arbre1_xA0_Image_1.png"></li>
+
+<li style="top: 693px; left: 591px;" ><img src="../css/img/aillaud/svg/arbre1reverse_xA0_Image_1.png" width="341" height="315"></li>
+
+<li style="top: 520px; left: 330px;" ><img src="../css/img/aillaud/svg/arbre2_xA0_Image.png" width="446" height="355"></li>
+
+<li style="top: 739px; left: 171px;" ><img src="../css/img/aillaud/svg/arbre2reverse_xA0_Image.png" width="432" height="333"></li>
+
+<li style="top: 623px; left: 65px;" ><img src="../css/img/aillaud/svg/arbre3_xA0_Image.png" width="371" height="303"></li>
+
+<li style="top: 804px; left: 389px;" ><img src="../css/img/aillaud/svg/arbre3revers_xA0_Image.png" width="372" height="304"></li>
+
+<li style="top: 942px; left: 821px;" ><img src="../css/img/aillaud/svg/arbuste1_xA0_Image.png" width="106" height="128"></li>
+
+<li style="top: 754px; left: 755px;" ><img src="../css/img/aillaud/svg/arbuste2_xA0_Image.png" width="232" height="219"></li>
+
+<li style="top: 935px; left: 607px;" ><img src="../css/img/aillaud/svg/cactus2_xA0_Image.png" width="124" height="133"></li>
+
+<li style="top: 940px; left: 430px;" ><img src="../css/img/aillaud/svg/cactus_xA0_Image.png" width="131" height="137"></li>
+
+<li style="top: 1033px; left: 154px;" ><img src="../css/img/aillaud/svg/croco.png" width="233" height="112"></li>
+
+<li style="top: 1150px; left: 194px;" ><img src="../css/img/aillaud/svg/croco2.png" width="332" height="83"></li>
+
+<li style="top: 1081px; left: 388px;" ><img src="../css/img/aillaud/svg/fleurs_xA0_Image.png" width="207" height="103"></li>
+
+<li style="top: 825px; left: 103px;" ><img src="../css/img/aillaud/svg/herbes2_xA0_Image.png" width="229" height="151"></li>
+
+<li style="top: 886px; left: 198px;" ><img src="../css/img/aillaud/svg/herbes_xA0_Image.png" width="219" height="160"></li>
+
+<li style="top: 1216px; left: 86px;" ><img src="../css/img/aillaud/svg/hippo_xA0_Image.png" width="283" height="105"></li>
+
+<li style="top: 1060px; left: 598px;" ><img src="../css/img/aillaud/svg/largesfeuilles_xA0_Image.png" width="134" height="157"></li>
+
+<li style="top: 1012px; left: 744px;" ><img src="../css/img/aillaud/svg/largesfeuillesreverse_xA0_Image.png" width="134" height="157"></li>
+
+<li style="top: 1266px; left: 367px;" ><img src="../css/img/aillaud/svg/lion_xA0_Image.png" width="249" height="146"></li>
+
+<li style="top: 1302px; left: 768px;" ><img src="../css/img/aillaud/svg/singe1_xA0_Image_1.png" width="89" height="135"></li>
+
+<li style="top: 1396px; left: 433px;" ><img src="../css/img/aillaud/svg/singe1_xA0_Image_2.png" width="117" height="129"></li>
+
+<li style="top: 1370px; left: 714px;" ><img src="../css/img/aillaud/svg/singe2_xA0_Image_1.png" width="85" height="112"></li>
+
+<li style="top: 1340px; left: 859px;" ><img src="../css/img/aillaud/svg/singe2_xA0_Image_2.png" width="71" height="99"></li>
+
+<li style="top: 1404px; left: 566px;" ><img src="../css/img/aillaud/svg/singe5_xA0_Image.png" width="131" height="114"></li>
+
+<li style="top: 1421px; left: 809px;" ><img src="../css/img/aillaud/svg/singe6_xA0_Image.png" width="74" height="101"></li>
+
+<li style="top: 1135px; left: 727px;" ><img src="../css/img/aillaud/svg/zebre2_xA0_Image.png" width="190" height="174"></li>
+
+<li style="top: 1199px; left: 527px;" ><img src="../css/img/aillaud/svg/zebre1_xA0_Image.png" width="207" height="173"></li>
+
+<li id="plante-fond" style="right:-1px; z-index:-1" ><img src="../css/img/aillaud/svg/fond.png" width="1195" height="1536"></li>
+
+<li id="cielsoleil" style="left: -250px;z-index:0" ><img src="../css/img/aillaud/svg/cielsoleil.png" width="1196" height="1002"></li>
+
+</ul>
+
+</section> <!--section secondaire-->
+</section> <!--section principale-->
+
+		<div class="overlay"></div><!-- La div overlay -->
+		<script src="../js/popup.js"></script>
+        <script src="../js/jquery.foggy.min.js"></script>
+        <script src="../js/menu.js"></script>
+        
+</body>
+</html>

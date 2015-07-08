@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Waked</title>
+<link href="../css/Style.css" rel="stylesheet" type="text/css">
+<link href="../css/popup.css" rel="stylesheet" type="text/css">
+<style>
+#fond {
+  margin-top: -5px;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+#bouton1 {
+  top: 345px;
+  left: 1308px;
+  position: absolute;
+  color: #2E81A3;
+  font-family: source;
+  font-size: 42px;
+}
+#bouton2 {
+  top: 892px;
+  left: 670px;
+  position: absolute;
+  color: #941214;
+  font-family: source;
+  font-size: 46px;
+}
+.w_animaux {
+	position:absolute;
+	top:0;
+	left:0;
+}
+.w_trig_ronds div, .w_trig_lignes div {
+	position:absolute;
+	width:150px;
+	height:150px;
+}
+.w_trig_ronds div {
+	width: 180px;
+ 	height: 180px;
+  	border-radius: 180px;
+}
+/* Triggers Ronds */
+
+#trig_rond7 {
+  top: 90px;
+  left: 1648px;
+}
+#trig_rond6 {
+  top: 1150px;
+  left: 1616px;
+}
+div#trig_rond5 {
+  top: 312px;
+  left: 52px;
+}
+#trig_rond4 {
+  top: 72px;
+  left: 634px;
+}
+#trig_rond3 {
+  top: 1121px;
+  left: 73px;
+}
+#trig_rond2 {
+  top: 858px;
+  left: 1816px;
+}
+#trig_rond1 {
+  top: 177px;
+  left: 336px;
+}
+
+/* triggers lignes  */
+#trig_ligne7 {
+  top: 710px;
+  left: 200px;
+  width: 680px;
+  height: 260px;
+}
+#trig_ligne6 {
+  top: 540px;
+  left: 1110px;
+  width: 760px;
+  height: 240px;
+}
+#trig_ligne5 {
+  top: 820px;
+  left: 890px;
+  width: 760px;
+  height: 230px;
+}
+#trig_ligne4 {
+  top: 980px;
+  left: 310px;
+  width: 500px;
+  height: 230px;
+}
+#trig_ligne3 {
+  top: 1060px;
+  left: 1110px;
+  width: 390px;
+  height: 400px;
+}
+#trig_ligne2 {
+  top: 20px;
+  left: 930px;
+  width: 260px;
+  height: 740px;
+  transform: rotate(36deg);
+  -webkit-transform:rotate(36deg);
+}
+#trig_ligne1 {
+  top: 1220px;
+  left: 720px;
+  width: 380px;
+  height: 300px;
+}
+</style>
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/scroll.js"></script>
+
+
+</head>
+
+<body>
+
+<!-- MENU -->
+<a id="boutonMenu" href="../plan.html" ><img src="../css/img/nav/icone-menu.png" /></a>
+<a id="boutonHome" href="../intro.html"><img src="../css/img/nav/icone-home.png" /></a>
+ <!-- FIN MENU -->
+
+		<!-- LE CONTENU DE LA POPUP 1 -->
+		<div class="modal blur-effect" id="popup1">
+			<div class="popup-content">
+				<h3>quotidien</h3>
+				<div>
+					<p class="para">Qui se passe tous les jours.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+		<!-- LE CONTENU DE LA POPUP 2 -->
+		<div class="modal blur-effect" id="popup2">
+			<div class="popup-content">
+				<h3>zébrures</h3>
+				<div>
+					<p class="para">Rayures que portent les zèbres.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+
+<section class="page">
+<section id="section1" class="section section1">
+
+	<img src="../css/img/waked/fondjeu-pagetitre/waked-titre2.png" />
+    <button id="bouton1" class="popup-button" data-modal="popup1">quotidien</button>
+    <button id="bouton2" class="popup-button" data-modal="popup2">zébrures</button>
+
+</section> <!--section premiere-->
+<section id="section2" class="section section2">
+
+	<img id="fond" src="../css/img/waked/fondjeu-pagetitre/waked-jeu-fond.png" />
+    
+    <img id="ligne1" class="w_animaux w_lignes" src="../css/img/waked/calques-lignes/ligne-dalmat.png" />
+    <img id="ligne2" class="w_animaux w_lignes" src="../css/img/waked/calques-lignes/ligne-girafe.png" />
+    <img id="ligne3" class="w_animaux w_lignes" src="../css/img/waked/calques-lignes/ligne-guepard.png" />
+    <img id="ligne4" class="w_animaux w_lignes" src="../css/img/waked/calques-lignes/ligne-leopard.png" />
+    <img id="ligne5" class="w_animaux w_lignes" src="../css/img/waked/calques-lignes/ligne-tigre.png" />
+    <img id="ligne6" class="w_animaux w_lignes" src="../css/img/waked/calques-lignes/ligne-vache.png" />
+    <img id="ligne7" class="w_animaux w_lignes" src="../css/img/waked/calques-lignes/ligne-zebre.png" />
+    
+    <img class="w_animaux w_rond" src="../css/img/waked/calques-ronds/rond-dalmat.png" />
+    <img class="w_animaux w_rond" src="../css/img/waked/calques-ronds/rond-girafet.png" />
+    <img class="w_animaux w_rond" src="../css/img/waked/calques-ronds/rond-guepard.png" />
+    <img class="w_animaux w_rond" src="../css/img/waked/calques-ronds/rond-leopard.png" />
+    <img class="w_animaux w_rond" src="../css/img/waked/calques-ronds/rond-tigre.png" />
+    <img class="w_animaux w_rond" src="../css/img/waked/calques-ronds/rond-vache.png" />
+    <img class="w_animaux w_rond" src="../css/img/waked/calques-ronds/rond-zebret.png" />
+    
+    <img id="dalmatien" class="w_animaux w_pleins" src="../css/img/waked/calques-pleins/plein-dalmatien.png" />
+    <img id="girafe" class="w_animaux w_pleins" src="../css/img/waked/calques-pleins/plein-girafe.png" />
+    <img id="guepard" class="w_animaux w_pleins" src="../css/img/waked/calques-pleins/plein-guepard.png" />
+    <img id="leopard" class="w_animaux w_pleins" src="../css/img/waked/calques-pleins/plein-leopard.png" />
+    <img id="tigre" class="w_animaux w_pleins" src="../css/img/waked/calques-pleins/plein-tigre.png" />
+    <img id="vache" class="w_animaux w_pleins" src="../css/img/waked/calques-pleins/plein-vache.png" />
+    <img id="zebre" class="w_animaux w_pleins" src="../css/img/waked/calques-pleins/plein-zebre.png" />
+    
+    <div class="w_trig_ronds">
+    	<div id="trig_rond1"></div>
+        <div id="trig_rond2"></div>
+        <div id="trig_rond3"></div>
+        <div id="trig_rond4"></div>
+        <div id="trig_rond5"></div>
+        <div id="trig_rond6"></div>
+        <div id="trig_rond7"></div>
+    </div>
+    
+    <div class="w_trig_lignes">
+    	<div id="trig_ligne1"></div>
+        <div id="trig_ligne2"></div>
+        <div id="trig_ligne3"></div>
+        <div id="trig_ligne4"></div>
+        <div id="trig_ligne5"></div>
+        <div id="trig_ligne6"></div>
+        <div id="trig_ligne7"></div>
+    </div>
+    
+    
+
+</section> <!--section secondaire-->
+</section> <!--section principale-->
+
+<div class="overlay"></div><!-- La div overlay -->
+
+<script src="../js/popup.js"></script>
+<script src="../js/jquery.foggy.min.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/waked.js"></script>
+        
+        
+</body>
+</html>

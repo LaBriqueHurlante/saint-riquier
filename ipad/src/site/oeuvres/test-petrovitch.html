@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>titre</title>
+<link href="../css/Style.css" rel="stylesheet" type="text/css">
+<link href="../css/popup.css" rel="stylesheet" type="text/css">
+<style>
+.section1 {background:url(../css/img/petrovitch/fond-jeu.svg) no-repeat;}
+#img0 {
+	position: absolute;
+  bottom: 0;
+ left: 400px;
+ z-index:2; 
+  }
+
+
+.image-animal {
+	position: absolute;
+  bottom: 0px;
+  left: 0px;
+  }
+ .animal {position: absolute;opacity:0;transform:scale(0);}
+ .animal2 {position: absolute;transition:all linear 3s;top:-838px;opacity:1;transform:scale(1);}
+</style>
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/scroll.js"></script>
+
+
+
+</head>
+
+<body>
+
+<section class="page">
+<section id="section1" class="section section1">
+
+	<img id="img0" src="../css/img/petrovitch/gens.png" />
+    
+    <div id="int1" class="carre-interaction"></div>
+    <div id="int2" class="carre-interaction"></div>
+ 	<div id="int3" class="carre-interaction"></div>
+    <div id="int4" class="carre-interaction"></div>
+    <div id="int5" class="carre-interaction"></div>
+    <div id="int6" class="carre-interaction"></div>
+    <div id="int7" class="carre-interaction"></div>
+    <div id="int8" class="carre-interaction"></div>
+    <div id="int9" class="carre-interaction"></div>
+    
+    
+    
+    
+    <div id="divImg1" class="contenant-interaction" style="position:absolute !important">   			
+        	<div class="image-animal"><img class="animal" id="img1"  src="../css/img/petrovitch/dauphin.png" /></div>
+	</div>
+    
+    <div id="divImg2" class="contenant-interaction" style="position:absolute !important">                       
+            <div class="image-animal"><img class="animal" id="img2"  src="../css/img/petrovitch/papillon.png" /></div>
+	</div>
+    
+    <div id="divImg3" class="contenant-interaction" style="position:absolute !important">                       
+            <div class="image-animal"><img class="animal" id="img3"  src="../css/img/petrovitch/lezard.png" /></div>
+ 	</div>
+    
+    <div id="divImg4" class="contenant-interaction" style="position:absolute !important">                      
+            <div class="image-animal"><img class="animal" id="img4"  src="../css/img/petrovitch/ecureuil.png" /></div>
+	</div>
+    
+    <div id="divImg5" class="contenant-interaction" style="position:absolute !important">                       
+            <div class="image-animal"><img class="animal" id="img5"  src="../css/img/petrovitch/cheval.png" /></div>
+	</div>
+    
+    <div id="divImg6" class="contenant-interaction" style="position:absolute !important">                       
+            <div class="image-animal"><img class="animal" id="img6"  src="../css/img/petrovitch/manchot.png" /></div>
+	</div>
+    
+    <div id="divImg7" class="contenant-interaction" style="position:absolute !important">                       
+            <div class="image-animal"><img class="animal" id="img7"  src="../css/img/petrovitch/oiseau.png" /></div>
+	</div>
+    
+    <div id="divImg8" class="contenant-interaction" style="position:absolute !important">                       
+            <div class="image-animal"><img class="animal" id="img8"  src="../css/img/petrovitch/chat.png" /></div>
+ 	</div>
+    
+    <div id="divImg9" class="contenant-interaction" style="position:absolute !important">                      
+            <div class="image-animal"><img class="animal" id="img9"  src="../css/img/petrovitch/chien.png" /></div>        
+    </div>
+
+</section> <!--section premiere-->
+<section id="section2" class="section section2"></section> <!--section secondaire-->
+</section> <!--section principale-->
+
+<div class="overlay"></div><!-- La div overlay -->
+
+		<script src="../js/popup.js"></script>
+        <script src="../js/jquery.foggy.min.js"></script>
+        <script src="../js/menu.js"></script>
+        
+<script>
+$( "#int1" ).click(function() {
+  $( '#img1' ).switchClass( "animal","animal2" );
+});
+$( "#int2" ).click(function() {
+  $( '#img2' ).switchClass( "animal","animal2" );
+});
+$( "#int3" ).click(function() {
+  $( '#img3' ).switchClass( "animal","animal2" );
+});
+$( "#int4" ).click(function() {
+  $( '#img4' ).switchClass( "animal","animal2" );
+});
+$( "#int5" ).click(function() {
+  $( '#img5' ).switchClass( "animal","animal2" );
+});
+$( "#int6" ).click(function() {
+  $( '#img6' ).switchClass( "animal","animal2" );
+});
+$( "#int7" ).click(function() {
+  $( '#img7' ).switchClass( "animal","animal2" );
+});
+$( "#int8" ).click(function() {
+  $( '#img8' ).switchClass( "animal","animal2" );
+});
+$( "#int9" ).click(function() {
+  $( '#img9' ).switchClass( "animal","animal2" );
+});
+</script>
+</body>
+</html>

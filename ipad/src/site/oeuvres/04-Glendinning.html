@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>L'enfant</title>
+<link href="../css/Style.css" rel="stylesheet" type="text/css">
+<link href="../css/popup.css" rel="stylesheet" type="text/css">
+<style>
+	body {overflow:hidden;}
+	.page {width:4188px;height:1536px;}
+	.section1, .section2 {display:inline-block;float:left;overflow:visible;}
+	.section2 {width:2140px;}
+	#enfant {
+	  position: absolute;
+  	right: 0;
+ 	 top: 0;
+	 z-index:0;	
+}
+.enf_plumes {
+	  position: absolute;
+  	right: 0;
+ 	 top: 0;
+	 z-index:4;
+	   width: 100px;
+  height: 100px;
+  /*background-color: rgba(95, 158, 160, 0.5);*/
+}
+.enf_plumes img {
+z-index: 2;
+}
+a.random {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 0;
+}
+.enf_plumes img {top:0px;right:0px;}
+#bouton-oiseau {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  z-index: 100;
+  left: 110px;
+  top: 1330px;
+}
+.popup-content .para {
+  position: inherit;
+}
+img.para {
+  width: 1370px;
+  left: 310px;
+}
+#oiseau .popup-oiseau {
+  position: absolute;
+  bottom: 96px;
+  width: 300px;
+  left: 180px;
+}
+</style>
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/scroll.js"></script>
+
+
+</head>
+
+<body>
+
+<!-- LE CONTENU DE LA POPUP oiseau -->
+		<div class="modal blur-effect" id="oiseau">
+			<div class="popup-content">
+				<div>
+               		 <img class="popup-oiseau" src="../css/img/nav/chouettedte.png" />
+					<img class="para" src="../css/img/nav/bulle-glendinning.png" />
+                    
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+
+<!-- MENU -->
+<a id="boutonMenu" href="../plan.html" ><img src="../css/img/nav/icone-menu.png" /></a>
+<a id="boutonHome" href="../intro.html"><img src="../css/img/nav/icone-home.png" /></a>
+ <!-- FIN MENU -->
+
+<section class="page">
+<section id="section1" class="section section1">
+	<img src="../css/img/glendinning/Glendinning-titre.png" />
+</section> <!--section premiere-->
+<section id="section2" class="section section2">
+
+<img id="enfant" src="../css/img/glendinning/calques/fond-corps.png" />
+<button id="bouton-oiseau" class="popup-button" data-modal="oiseau"><img id="chouette" src="../css/img/nav/chouettedte.png" /></button>
+
+</section> <!--section secondaire-->
+</section> <!--section principale-->
+
+<div class="overlay"></div><!-- La div overlay -->
+
+		<script src="../js/popup.js"></script>
+        <script src="../js/jquery.foggy.min.js"></script>
+        <script src="../js/menu.js"></script>
+        <script src="../js/enfant.js"></script>
+
+</body>
+</html>

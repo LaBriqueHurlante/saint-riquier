@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" applicationDPI="320"
+			   applicationComplete="application1_applicationCompleteHandler(event)"
+			   >
+	<fx:Declarations>
+		<!-- Placer ici les éléments non visuels (services et objets de valeur, par exemple). -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import mx.events.FlexEvent;			
+			
+			protected function application1_applicationCompleteHandler(event:FlexEvent):void
+			{
+				
+				var source:File = File.applicationDirectory.resolvePath("site") ; 
+				var destination:File = File.applicationStorageDirectory;
+				//source.copyTo(destination, true);  
+				copyInto(source, destination);
+				var initialURL:String = "file://" + destination.resolvePath("index.html").nativePath;
+				//var initialURL:String = "file://" + destination.resolvePath("oeuvres/06-patchwork.html").nativePath;
+				
+				this.stage.scaleMode = StageScaleMode.SHOW_ALL;
+				
+				var webView:StageWebView = new StageWebView();			
+				webView.stage = this.stage;
+				webView.viewPort = new Rectangle( 0, 0, stage.stageWidth, stage.stageHeight );				
+				webView.loadURL(initialURL);				
+			}
+
+			
+			private function copyInto(directoryToCopy:File, locationCopyingTo:File):void
+			{
+				var directory:Array = directoryToCopy.getDirectoryListing();
+				
+				for each (var f:File in directory)
+				{
+					if (f.isDirectory)
+						copyInto(f, locationCopyingTo.resolvePath(f.name));
+					else
+						f.copyTo(locationCopyingTo.resolvePath(f.name), true);
+				}
+				
+			}			
+			
+		]]>
+	</fx:Script>
+	<s:Group width="100%" height="100%">
+	</s:Group>
+</s:Application>

@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Patchwork</title>
+<link href="../css/Style.css" rel="stylesheet" type="text/css">
+<link href="../css/popup.css" rel="stylesheet" type="text/css">
+<style>
+	body {background: #C62318;overflow:hidden;}
+.page {width:4188px;height:1536px;}
+	.section1, .section2 {display:inline-block;float:left;overflow:visible;}
+	.section2 {width:2140px;}
+#content {
+
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+	#cardSlots {
+width: 1460px;
+  text-align: center;
+  margin-right: 130px;
+  margin-left: auto;
+  margin-top: 130px;
+  clear: both;
+  box-sizing: border-box;
+  }
+#cardSlots .slot-carre{background:#DFE0D8;}
+  #cardSlots div.hovered {
+  background: #fff;
+}
+#cardPile {
+  width: 410px;
+  position: absolute;
+  clear: both;
+  box-sizing: border-box;
+  top: 180px;
+  left: 110px;
+}
+#cardPile div {
+width: 130px;
+  height: 130px;
+  float: left;
+  margin: 2px;
+	}
+#cardSlots div:first-child, #cardPile div:first-child {
+  margin-left: 0;
+}
+#cardPile img.ui-draggable-dragging {
+	
+	width:213px;
+	height:213px;
+	
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+#cardPile img.correct {
+	width:213px;
+	height:213px;
+	background-color: #E4191C;
+	}
+#content img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#bouton1 {
+  top: 902px;
+  left: 345px;
+  position: absolute;
+  color: #68C6B4;
+  font-family: source;
+  font-size: 48px;
+  transform: rotate(2deg);
+}
+#bouton2 {
+  top: 766px;
+  left: 1356px;
+  position: absolute;
+  color: #68C6B4;
+  font-family: source;
+  font-size: 43px;
+}
+</style>
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/jquery.ui.touch-punch.min.js"></script>
+<script src="../js/scroll.js"></script>
+
+
+</head>
+
+<body>
+		<!-- LE CONTENU DE LA POPUP 1 -->
+		<div class="modal blur-effect" id="popup1">
+			<div class="popup-content">
+				<h3>plasticien</h3>
+				<div>
+					<p class="para">Se dit d’un artiste qui utilise toutes les techniques (dessin, peinture, installation, vidéo, photographie).</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+        		<!-- LE CONTENU DE LA POPUP 2-->
+		<div class="modal blur-effect" id="popup2">
+			<div class="popup-content">
+				<h3>tribu</h3>
+				<div>
+					<p class="para">groupe de familles vivant dans une même région.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+
+
+<!-- MENU -->
+<a id="boutonMenu" href="../plan.html" ><img src="../css/img/nav/icone-menu.png" /></a>
+<a id="boutonHome" href="../intro.html"><img src="../css/img/nav/icone-home.png" /></a>
+ <!-- FIN MENU -->
+
+<section class="page">
+<section id="section1" class="section section1">
+
+<img src="../css/img/patchwork/arche-ecran1bis.png" />
+<button id="bouton1" class="popup-button" data-modal="popup1">plasticien</button>
+<button id="bouton2" class="popup-button" data-modal="popup2">tribus</button>
+
+</section> <!--section premiere-->
+<section id="section2" class="section section2">
+
+<div id="content">
+<div id="cardPile"> </div>
+<div id="cardSlots"> </div>
+</div>
+
+</section> <!--section secondaire-->
+</section> <!--section principale-->
+
+<div class="overlay"></div><!-- La div overlay -->
+
+
+
+
+
+		<script src="../js/popup.js"></script>
+        <script src="../js/jquery.foggy.min.js"></script>
+        <script src="../js/menu.js"></script>
+        <script src="../js/arche.js"></script>
+</body>
+</html>

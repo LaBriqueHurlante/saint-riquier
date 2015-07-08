@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vernhes</title>
+<link href="../css/Style.css" rel="stylesheet" type="text/css">
+<link href="../css/popup.css" rel="stylesheet" type="text/css">
+<style>
+#section1 {
+background:url(../css/img/vernhes/vernhesfond.png);
+}
+#neon {
+width: 1188px;
+height: 1186px;
+top: 163px;
+left: 424px;
+position: absolute;
+box-shadow: 0px 0px 616px 105px #fff,0px 0px 616px 105px #fff inset;
+z-index: 0;
+}
+#dessus {
+z-index: 2;
+position: relative;
+}
+#bouton1 {
+  top: 690px;
+  left: 1708px;
+  position: absolute;
+  color: #FC33F9;
+  font-family: source;
+  font-size: 46px;
+  z-index: 3;
+}
+#bouton2 {
+  top: 1067px;
+  left: 24px;
+  position: absolute;
+  color: #FC33F9;
+  font-family: source;
+  font-size: 50px;
+  z-index: 3;
+}
+#bouton3 {
+  top: 986px;
+  left: 24px;
+  position: absolute;
+  color: #FC33F9;
+  font-family: source;
+  font-size: 50px;
+  z-index: 3;
+}
+.popup-content .para {
+  letter-spacing: 5px;
+}
+.modal {
+max-width: 1820px;
+  min-width: 250px;
+  max-height: 1390px;
+}
+#gerris {
+  position: absolute;
+  top: -72px;
+  left: -116px;
+  background: #fff;
+  width: auto;
+}
+</style>
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/scroll.js"></script>
+
+
+</head>
+
+<body>
+
+<!-- MENU -->
+<a id="boutonMenu" href="../plan.html" ><img src="../css/img/nav/icone-menu.png" /></a>
+<a id="boutonHome" href="../intro.html"><img src="../css/img/nav/icone-home.png" /></a>
+ <!-- FIN MENU -->
+
+		<!-- LE CONTENU DE LA POPUP 1 -->
+		<div class="modal blur-effect" id="popup1">
+        <img id="gerris" src="../css/img/vernhes/gerris.png" />
+			<div class="popup-content">
+				<h3>Gerris</h3>
+				<div>
+					<p class="para">Ce sont des insectes de la famille des punaises. Eric a choisit leur nom latin pour son oeuvre : Gerridae. Leurs pattes sont couvertes de petits poils très fins qui leur permettent de ne pas s'enfoncer dans l'eau. On les appelle des araignées d’eau, ou parfois les « patineurs de l’eau », car elles glissent avec adresse à la surface de l'eau.</p>
+                    
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+		<!-- LE CONTENU DE LA POPUP 2 -->
+		<div class="modal blur-effect" id="popup2">
+			<div class="popup-content">
+				<h3>Interactive</h3>
+				<div>
+					<p class="para">Une œuvre interactive est une œuvre qui a besoin de l’action du spectateur pour s’animer.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+		<!-- LE CONTENU DE LA POPUP 3 -->
+		<div class="modal blur-effect" id="popup3">
+			<div class="popup-content">
+				<h3>Numérique</h3>
+				<div>
+					<p class="para">Une œuvre numérique est une œuvre qui utilise des logiciels informatiques, des codes, des chiffres.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+
+<section class="page2">
+<section id="section1" class="section section1">
+
+	<div id="neon"></div>
+	<img id="dessus" src="../css/img/vernhes/vernhesdessus.png">
+    <button id="bouton1" class="popup-button" data-modal="popup1">Gerris</button>
+    <button id="bouton2" class="popup-button" data-modal="popup2">interactives</button>
+    <button id="bouton3" class="popup-button" data-modal="popup3">numériques</button>
+
+</section> <!--section premiere-->
+
+</section> <!--section principale-->
+
+<div class="overlay"></div><!-- La div overlay -->
+
+<script src="../js/popup.js"></script>
+<script src="../js/jquery.foggy.min.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/jquery.animate-shadow-min.js"></script>
+        
+<script>
+//boxShadow Animation du Néon
+$(document).ready(function(e) {
+	boxNeon();
+
+$('#bouton1').click(function(){
+	$('#gerris').delay(3000).fadeOut(2000);
+	})
+
+});
+function boxNeon(){
+    $("#neon").animate({
+		boxShadow: "0px 0px 616px 105px rgb(255, 73, 73),0px 0px 616px 400px rgb(255, 73, 73) inset"
+		},3000, function(){
+		$(this).animate({
+		boxShadow: "0px 0px 616px 105px #F00,0px 0px 616px 405px #F00 inset"
+		},3000, function(){
+		$(this).animate({
+		boxShadow: "0px 0px 616px 105px rgb(255, 223, 0),0px 0px 616px 405px rgb(255, 223, 0) inset"
+		},3000, function(){
+		$(this).animate({
+		boxShadow: "0px 0px 616px 105px rgb(255, 145, 0),0px 0px 616px 405px rgb(255, 145, 0) inset"
+		},3000, function(){
+		$(this).animate({
+		boxShadow: "0px 0px 616px 105px rgb(0, 129, 255),0px 0px 616px 400px rgb(0, 129, 255) inset"
+		},3000, function(){
+		$(this).animate({
+		boxShadow: "0px 0px 616px 105px rgb(84, 0, 255),0px 0px 616px 400px rgb(84, 0, 255) inset"
+		},3000, function(){
+		$(this).animate({
+		boxShadow: "0px 0px 616px 105px rgb(255, 0, 242),0px 0px 616px 400px rgb(255, 0, 242) inset"
+		},3000, function(){
+		$(this).animate({
+		boxShadow: "0px 0px 616px 105px rgb(255, 0, 39),0px 0px 616px 400px rgb(255, 0, 39) inset"
+		},3000, function(){
+		$(this).animate({
+		boxShadow: "0px 0px 616px 105px rgb(0, 255, 119),0px 0px 616px 400px rgb(0, 255, 119) inset"
+		},3000, function(){
+		$(this).animate({
+		boxShadow: "0px 0px 616px 105px rgb(152, 255, 0),0px 0px 616px 400px rgb(152, 255, 0) inset"
+		},3000, function(){
+		$(this).animate({
+		boxShadow: "0px 0px 616px 105px rgb(103, 255, 0),0px 0px 616px 400px rgb(103, 255, 0) inset"
+		},3000)
+		})
+		})
+		})
+		})
+		})
+		})
+		})
+		})
+		})
+		})
+}
+setInterval("boxNeon();",33000);	
+</script>
+</body>
+</html>

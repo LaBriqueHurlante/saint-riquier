@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Les chiens bleus</title>
+<link href="../css/Style.css" rel="stylesheet" type="text/css">
+<link href="../css/popup.css" rel="stylesheet" type="text/css">
+
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/scroll.js"></script>
+<style>
+#bouton1 {
+top: 1205px;
+  left: 1363px;
+  position: absolute;
+  color: red;
+  font-size: 40px;
+  }
+img.popup-oiseau {
+  left: -120px;
+}
+#chouette {
+  left: 20px;
+  position: absolute;
+  width: 170px;
+}
+#oiseau .popup-oiseau {
+  position: absolute;
+  bottom: -184px;
+  width: 300px;
+  left: 490px;
+}
+#bouton-oiseau {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 250px;
+}
+img.para {
+  left: 640px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- MENU -->
+<a id="boutonMenu" href="../plan.html" ><img src="../css/img/nav/icone-menu.png" /></a>
+<a id="boutonHome" href="../intro.html"><img src="../css/img/nav/icone-home.png" /></a>
+ <!-- FIN MENU -->
+
+		<!-- LE CONTENU DE LA POPUP 1 -->
+		<div class="modal blur-effect" id="popup1">
+			<div class="popup-content">
+				<h3>Saqqarah</h3>
+				<div>
+					<p class="para">C'est une ville d’Egypte.</p>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+        
+        <!-- LE CONTENU DE LA POPUP oiseau -->
+		<div class="modal blur-effect" id="oiseau">
+			<div class="popup-content">
+				<div>
+					<img class="para" src="../css/img/nav/bulle-cueco.png" />
+                    <img class="popup-oiseau" src="../css/img/nav/chouettedte.png" />
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DE LA POPUP -->
+
+<section class="page">
+<section id="section1" class="section section1">
+	<img src="../css/img/chiens-bleus/cueco-fondtitre.png" />
+    <button id="bouton1" class="popup-button" data-modal="popup1">Saqqarah</button>
+</section> <!--section premiere-->
+<section id="section2" class="section section2">
+
+<ul>
+	<li id="chiens-button1" class="chiens-buttons"><button></button></li>
+    <li id="chiens-button2" class="chiens-buttons"><button></button></li>
+    <li id="chiens-button3" class="chiens-buttons"><button></button></li>
+    <li id="chiens-button4" class="chiens-buttons"><button></button></li>
+    <li id="chiens-button5" class="chiens-buttons"><button></button></li>
+    <li id="chiens-button6" class="chiens-buttons"><button></button></li>
+    <li id="chiens-button7" class="chiens-buttons"><button></button></li>
+    <li><img src="../css/img/chiens-bleus/chiensbleus.jpg" /></li>
+</ul>
+<button id="bouton-oiseau" class="popup-button" data-modal="oiseau"><img id="chouette" src="../css/img/nav/chouettedte.png" /></button>
+</section> <!--section secondaire-->
+</section> <!--section principale-->
+
+<div class="overlay"></div><!-- La div overlay -->
+
+		<script src="../js/popup.js"></script>
+        <script src="../js/jquery.foggy.min.js"></script>
+        <script src="../js/menu.js"></script>
+<script>
+$(document).ready(function() {
+  $('.chiens-buttons button').click(function() {
+    $(this).addClass('blob');
+  });
+});
+</script>
+
+</body>
+</html>
