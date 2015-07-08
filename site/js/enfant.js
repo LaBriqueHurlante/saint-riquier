@@ -15,7 +15,8 @@ $('.enf_plumes').click(function() {
 	"z-index": '1',
 	"top":'0px',
 	"right":'0px',
-	"background":'none'
+	"background":'none',
+	"width":"100%"
   })
   $(this).find("img").fadeIn('slow');
   //poemes();
