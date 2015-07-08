@@ -9,7 +9,8 @@ $(document).ready(function() {
       containment: '.section2',
       stack: '#cardPile div',
       cursor: '-webkit-grab',
-      revert: false
+      revert: false,
+	  disabled: true
     } )
 	$('<img src="../css/img/patchwork/' + numbers[i]+ '.png" />').appendTo( '#card'+numbers[i] ).draggable( {
       containment: '.section2',
@@ -42,6 +43,7 @@ function handleCardDrop( event, ui ) {
     ui.draggable.addClass( 'correct' );
 
     ui.draggable.position( { of: $(this), my: 'left top', at: 'left top' } );
+	ui.draggable.removeClass('ui-draggable ui-draggable-handle');
 
 
 }});
